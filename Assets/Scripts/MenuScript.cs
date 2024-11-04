@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    public static bool gameIsPaused;
+
+    public GameObject pauseMenu;
+
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -13,11 +17,40 @@ public class MenuScript : MonoBehaviour
 
     public void ExitGame()
     {
-        UnityEngine.Application.Quit();
+        Application.Quit();
     }
 
     public void ToMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+        pauseMenu.SetActive(true);
+        gameIsPaused = true;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+        pauseMenu.SetActive(false);
+        gameIsPaused = false;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (gameIsPaused)
+            {
+                Resume();
+            }
+            else
+            {
+                Pause();
+            }
+        }
     }
 }
