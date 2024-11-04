@@ -420,6 +420,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 222866080}
+    - target: {fileID: 4406429745963909392, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4406429745963909392, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 46a679c052953b34b85f3bbfbc3bac7e, type: 3}
     - target: {fileID: 6310654052114248482, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
       propertyPath: m_Name
       value: Pause Menu
