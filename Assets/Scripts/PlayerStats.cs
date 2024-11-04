@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using TMPro;
 public class PlayerStats : MonoBehaviour
 {
-    public int power, speed, currentHealth, maxHealth, fireRate;
+    public int power, speed, currentHealth, maxHealth;
     float powerMultiplier, speedMultiplier, fireRateMultiplier;
+    public float fireRate;
 
     public Image[] hearts;
     public Sprite fullHeart, emptyHeart;
 
-    float currentXp;
+   [HideInInspector] public float currentXp;
     public float level, maxXp;
     float overflowXp;
     public Slider xpBar;
+    public TextMeshProUGUI levelText;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,6 +55,7 @@ public class PlayerStats : MonoBehaviour
         }
         xpBar.value = currentXp;
         xpBar.maxValue = maxXp;
+        levelText.text = "LV: " + level.ToString();
 
     }
 }

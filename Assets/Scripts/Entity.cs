@@ -28,6 +28,7 @@ public class Entity : MonoBehaviour
 
     public virtual void Die()
     {
+        GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().currentXp += xpDrop;
         Destroy(gameObject);
     }
 }
