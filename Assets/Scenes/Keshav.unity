@@ -252,7 +252,7 @@ MonoBehaviour:
   worldSize: {x: 50, y: 100}
   numberOfRooms: 10
   roomWhiteObj: {fileID: 192847700569374965, guid: 34732beae2b3a204b846bd6844ffd7fe, type: 3}
-  room: []
+  roomL: []
   boss: {fileID: 1898445321837384, guid: 09e14c596e782a742829f1166838514d, type: 3}
   roomSize: {x: 48, y: 24}
   grid: {fileID: 1310708820}
@@ -419,26 +419,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6727651098441745798, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_Name
-      value: GunHolder
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651098584733384, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651098864802852, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: orthographic size
-      value: 150
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651098963574614, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_Name
-      value: Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651098963574619, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: numberOfbullets
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6727651099053205286, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -446,18 +426,6 @@ PrefabInstance:
     - target: {fileID: 6727651099053205286, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651099303706271, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_Color.b
-      value: 0.3584906
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651099303706271, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_Color.g
-      value: 0.3584906
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651099303706271, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_Color.r
-      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 6727651100106747284, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
       propertyPath: m_RootOrder
@@ -503,21 +471,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6727651100106747285, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 6727651100106747287, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651100106747289, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: health
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651100106747289, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: fireRate
-      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
