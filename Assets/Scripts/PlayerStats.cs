@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class PlayerStats : MonoBehaviour
+public class PlayerStats : Entity
 {
-    public int power, speed, currentHealth, maxHealth;
+    public int power, speed, maxHealth;
     float powerMultiplier, speedMultiplier, fireRateMultiplier;
     public float fireRate;
 
@@ -28,7 +28,7 @@ public class PlayerStats : MonoBehaviour
     {
         for (int i = 0; i < hearts.Length; i++)
         {
-            if (i < currentHealth)
+            if (i < health)
             {
                 hearts[i].sprite = fullHeart;
             }
