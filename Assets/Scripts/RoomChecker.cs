@@ -7,7 +7,7 @@ public class RoomChecker : MonoBehaviour
 {
     public GameObject[] locks;
     public List<Collider2D> enemies;
-    bool enemiesDefeated;
+   public bool enemiesDefeated;
     public Vector2 roomSize;
     public LayerMask enemyLayer;
     // Start is called before the first frame update
@@ -26,7 +26,7 @@ public class RoomChecker : MonoBehaviour
             Unlock();
         }
     }
-    void Lock()
+   public void Lock()
     {
         foreach (GameObject g in locks)
         {
