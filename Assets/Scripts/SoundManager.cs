@@ -6,11 +6,14 @@ using UnityEngine.UI;
 
 public class SoundManager : MonoBehaviour
 {
-    [SerializeField] UnityEngine.UI.Slider volumeSlider;
+    public UnityEngine.UI.Slider volumeSlider;
+    public AudioListener audioListener;
 
     // Start is called before the first frame update
     void Start()
     {
+        audioListener = GameObject.Find("Main Camera").GetComponent<AudioListener>();
+
         if (!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
@@ -21,11 +24,11 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        ChangeVolume();
     }
+
 
     public void ChangeVolume()
     {

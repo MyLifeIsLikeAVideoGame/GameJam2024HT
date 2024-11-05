@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 
@@ -9,6 +10,10 @@ public class MenuScript : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
+
+    public float volume;
+
+   
 
     private void Start()
     {
@@ -46,6 +51,7 @@ public class MenuScript : MonoBehaviour
 
     void Update()
     {
+
         if (Input.GetKeyDown(KeyCode.Escape) && SceneManager.GetActiveScene().buildIndex != 0) 
         {
             if (gameIsPaused)
