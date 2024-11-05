@@ -10,10 +10,12 @@ public class MenuScript : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
+    public GameObject deathMenu;
 
     private void Start()
     {
         pauseMenu.SetActive(false);
+        deathMenu.SetActive(false);
     }
 
     public void NextScene()
