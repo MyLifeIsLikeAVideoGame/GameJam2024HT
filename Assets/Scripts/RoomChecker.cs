@@ -13,7 +13,7 @@ public class RoomChecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Unlock();
     }
 
     // Update is called once per frame
@@ -22,6 +22,14 @@ public class RoomChecker : MonoBehaviour
         Collider2D[] enemys = Physics2D.OverlapBoxAll(transform.position, roomSize, 0, enemyLayer);
         enemies = enemys.ToList<Collider2D>();
         if (enemies.Count <= 0)
+        {
+             enemiesDefeated = true;
+        }
+        else
+        {
+            enemiesDefeated = false;
+        }
+        if (enemiesDefeated)
         {
             Unlock();
         }
@@ -35,7 +43,6 @@ public class RoomChecker : MonoBehaviour
     }
     void Unlock()
     {
-        enemiesDefeated = true;
         foreach (GameObject g in locks)
         {
             g.SetActive(false);
