@@ -5,12 +5,14 @@ using UnityEngine;
 public class MapSpriteSelector : MonoBehaviour
 {
     public Sprite spU, spD, spR, spL, spUD, spRL, spUR, spUL, spDR, spDL, spULD, spRUL, spDRU, spLDR, spUDRL;
+    public GameObject GU, GD, GR, GL, GUD, GRL, GUR, GUL, GDR, GDL, GULD, GRUL, GDRU, GLDR, GUDRL;
     public bool up, down, left, right;
     public int type;
     public Color normalColor, enterColor;
     Color mainColor;
     SpriteRenderer rend;
     LevelGeneration generator;
+    Transform grid;
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
@@ -19,6 +21,7 @@ public class MapSpriteSelector : MonoBehaviour
         mainColor = normalColor;
         PickSprite();
         PickColor();
+        grid = transform.parent;
 
     }
     void PickSprite()
@@ -122,5 +125,69 @@ public class MapSpriteSelector : MonoBehaviour
             mainColor = enterColor;
         }
         rend.color = mainColor;
+    }
+    void SpawnWalls()
+    {
+        GameObject a;
+        if (rend.sprite == spU)
+        {
+           a = Instantiate(GU, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spD)
+        {
+            a = Instantiate(GD, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spR)
+        {
+           a= Instantiate(GR, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spL)
+        {
+           a= Instantiate(GL, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spUD)
+        {
+           a= Instantiate(GUD, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spRL)
+        {
+           a= Instantiate(GRL, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spUR)
+        {
+           a= Instantiate(GUR, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spUL)
+        {
+           a= Instantiate(GUL, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spDR)
+        {
+           a= Instantiate(GDR, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spDL)
+        {
+           a= Instantiate(GDL, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spULD)
+        {
+           a= Instantiate(GULD, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spRUL)
+        {
+           a= Instantiate(GRUL, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spDRU)
+        {
+           a= Instantiate(GDRU, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spLDR)
+        {
+            Instantiate(GLDR, transform.position, Quaternion.identity);
+        }
+        if (rend.sprite == spUDRL)
+        {
+           a= Instantiate(GUDRL, transform.position, Quaternion.identity);
+        }
     }
 }

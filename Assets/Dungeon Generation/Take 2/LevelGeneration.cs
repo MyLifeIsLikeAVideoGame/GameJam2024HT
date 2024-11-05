@@ -13,6 +13,7 @@ public class LevelGeneration : MonoBehaviour
     public List<GameObject> room;
     public GameObject boss;
     public Vector2 roomSize;
+    public GameObject grid;
     // Start is called before the first frame update
     void Start()
     {
@@ -233,6 +234,7 @@ public class LevelGeneration : MonoBehaviour
             mapper.down = room.doorBottom;
             mapper.right = room.doorRight;
             mapper.left = room.doorLeft;
+            mapper.transform.parent = grid.transform;
         }
     }
     void SetBossRoom()

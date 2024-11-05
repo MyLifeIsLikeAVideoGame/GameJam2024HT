@@ -59,6 +59,21 @@ MonoBehaviour:
   spDRU: {fileID: 21300000, guid: 4e19e0d3b88063b46ad8574093fe3e66, type: 3}
   spLDR: {fileID: 21300000, guid: b3403c31138e49a4f82c695d69220e47, type: 3}
   spUDRL: {fileID: 21300000, guid: f8bd375a6a3f70442a9144d0e96fda57, type: 3}
+  GU: {fileID: 509254058001626228, guid: 6370fd924c30dcd469fcc1ca080a5923, type: 3}
+  GD: {fileID: 6877936523730196992, guid: c964e898d0228dc458c8c1e1298b88ce, type: 3}
+  GR: {fileID: 4289840374201662471, guid: 950a2f08c3c7a0b48900c2ca7d149c64, type: 3}
+  GL: {fileID: 5678919825981127026, guid: f530e107a7b1a4348bc9c6b8a77569f5, type: 3}
+  GUD: {fileID: 7924338125134445445, guid: f705bc6b978632d44b8c5657c190c1b9, type: 3}
+  GRL: {fileID: 919233611295679252, guid: 9cc4b4f8289fae84984f8c3545c41347, type: 3}
+  GUR: {fileID: 6424781197113188703, guid: 70b8bd5123a1efd49b67f424207b024b, type: 3}
+  GUL: {fileID: 7169581081302301829, guid: a01d75dc243d547409c4b9931b9d23db, type: 3}
+  GDR: {fileID: 6358580168068839592, guid: 661d0f4d963da4944a3e49ce2be56de5, type: 3}
+  GDL: {fileID: 5488272942786504466, guid: fd386415a8ef46342b4b9ec056d80137, type: 3}
+  GULD: {fileID: 6275074192392101711, guid: 2d6d8f1dc50d104498c8b84b9576b709, type: 3}
+  GRUL: {fileID: 2758627435654128928, guid: 2ef5c73e0d9b55d4ca47ff41e9d363db, type: 3}
+  GDRU: {fileID: 1448867188174226677, guid: 1d0f1e915b9d311468c07c99a8d27d2b, type: 3}
+  GLDR: {fileID: 7661103310017584951, guid: fe24634e3f6c9c34ca9d461ee3cb47f2, type: 3}
+  GUDRL: {fileID: 4992868045047609049, guid: c168901b0a2addd40984101db0abcb4d, type: 3}
   up: 0
   down: 0
   left: 0
