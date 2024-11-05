@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 232862654}
+  deathMenu: {fileID: 0}
 --- !u!4 &222866081
 Transform:
   m_ObjectHideFlags: 0
@@ -499,6 +500,14 @@ PrefabInstance:
     - target: {fileID: 7438793758136802106, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565010638488694989, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7565010638488694989, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
       objectReference: {fileID: 0}
     - target: {fileID: 7981918359478050161, guid: 785d94b3bf6a91c4d97b23a7013e2459, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
