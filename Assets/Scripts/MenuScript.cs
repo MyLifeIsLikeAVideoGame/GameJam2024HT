@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    public Entity entity;
+    public PlayerStats playerStats;
 
     public static bool gameIsPaused;
 
@@ -59,6 +61,11 @@ public class MenuScript : MonoBehaviour
             {
                 Pause();
             }
+        }
+
+        if (playerStats.health <= 0)
+        {
+            deathMenu.SetActive(true);
         }
     }
 }
