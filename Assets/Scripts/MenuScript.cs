@@ -6,18 +6,13 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
-    public Entity entity;
-    public PlayerStats playerStats;
-
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
-    public GameObject deathMenu;
 
     private void Start()
     {
         pauseMenu.SetActive(false);
-        deathMenu.SetActive(false);
     }
 
     public void NextScene()
@@ -61,11 +56,6 @@ public class MenuScript : MonoBehaviour
             {
                 Pause();
             }
-        }
-
-        if (playerStats.health <= 0)
-        {
-            deathMenu.SetActive(true);
         }
     }
 }
