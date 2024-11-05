@@ -42,4 +42,10 @@ public class RoomChecker : MonoBehaviour
             
         }
     }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireCube(transform.position, roomSize);
+    }
 }
