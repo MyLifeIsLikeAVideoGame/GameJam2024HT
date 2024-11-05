@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2512505577436060046}
   - component: {fileID: 8668263479150663793}
   - component: {fileID: -8091984078337954550}
+  - component: {fileID: -1274974555766427534}
   m_Layer: 6
   m_Name: RIghtLeft
   m_TagString: Untagged
@@ -1404,6 +1405,27 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &-1274974555766427534
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919233611295679252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64249a6567a8b2429d802dabd5838ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locks:
+  - {fileID: 3129360276107936608}
+  - {fileID: 3029729485826744589}
+  enemies: []
+  enemiesDefeated: 0
+  roomSize: {x: 0, y: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &2662274490023462082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1696,6 +1718,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6553011623525219651}
   - component: {fileID: 7532808173119135588}
+  - component: {fileID: 5465666020977013843}
   m_Layer: 6
   m_Name: LeftTrigger
   m_TagString: Untagged
@@ -1743,6 +1766,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5465666020977013843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5301190443771824571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deb640f7f6e5494fb943fbe7aa355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: -1274974555766427534}
+  playerOffset: {x: 2, y: 0}
 --- !u!1 &5662713201181784855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,6 +1822,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3346764461340538444}
   - component: {fileID: 197196178153360608}
+  - component: {fileID: 5050917978328027858}
   m_Layer: 6
   m_Name: RightTrigger
   m_TagString: Untagged
@@ -1832,3 +1870,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5050917978328027858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8203405332965791424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deb640f7f6e5494fb943fbe7aa355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: -1274974555766427534}
+  playerOffset: {x: -2, y: 0}

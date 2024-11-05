@@ -180,7 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 2027970085544324326}
-  playerOffset: {x: 0, y: 0}
+  playerOffset: {x: 0, y: 2}
 --- !u!1 &1529841225990699693
 GameObject:
   m_ObjectHideFlags: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 2027970085544324326}
-  playerOffset: {x: 0, y: 0}
+  playerOffset: {x: -2, y: 0}
 --- !u!1 &4992868045047609049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1919,7 +1919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 2027970085544324326}
-  playerOffset: {x: 0, y: 0}
+  playerOffset: {x: 2, y: 0}
 --- !u!1 &7422184791279935611
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,7 +2100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   room: {fileID: 2027970085544324326}
-  playerOffset: {x: 0, y: 0}
+  playerOffset: {x: 0, y: -2}
 --- !u!1 &7616176820992594794
 GameObject:
   m_ObjectHideFlags: 0

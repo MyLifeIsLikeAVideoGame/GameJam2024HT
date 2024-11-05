@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8252346208199402542}
   - component: {fileID: 1655488016659626789}
   - component: {fileID: 8199605284882109432}
+  - component: {fileID: -1249775425794969141}
   m_Layer: 6
   m_Name: UpRightDown
   m_TagString: Untagged
@@ -1384,6 +1385,28 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
+--- !u!114 &-1249775425794969141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1448867188174226677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c64249a6567a8b2429d802dabd5838ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  locks:
+  - {fileID: 3420755726054801441}
+  - {fileID: 6981405664145808829}
+  - {fileID: 6219837366469963591}
+  enemies: []
+  enemiesDefeated: 0
+  roomSize: {x: 0, y: 0}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1717469814498783847
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,6 +1699,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5526316245778028288}
   - component: {fileID: 2467995688358558588}
+  - component: {fileID: 5219092549694356411}
   m_Layer: 6
   m_Name: RightTrigger
   m_TagString: Untagged
@@ -1723,6 +1747,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5219092549694356411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858677565176092933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deb640f7f6e5494fb943fbe7aa355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: -1249775425794969141}
+  playerOffset: {x: -2, y: 0}
 --- !u!1 &6981405664145808829
 GameObject:
   m_ObjectHideFlags: 0
@@ -1907,6 +1945,7 @@ GameObject:
   m_Component:
   - component: {fileID: 541448945951856261}
   - component: {fileID: 4712633453156735307}
+  - component: {fileID: 2873400441822052106}
   m_Layer: 6
   m_Name: TopTrigger
   m_TagString: Untagged
@@ -1954,6 +1993,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &2873400441822052106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7527705126893747961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deb640f7f6e5494fb943fbe7aa355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: -1249775425794969141}
+  playerOffset: {x: 0, y: -2}
 --- !u!1 &7699296623508031114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1964,6 +2017,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4441006580873444994}
   - component: {fileID: 1437034482035990557}
+  - component: {fileID: 566875220002661724}
   m_Layer: 6
   m_Name: DownTrigger
   m_TagString: Untagged
@@ -2011,3 +2065,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &566875220002661724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699296623508031114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1deb640f7f6e5494fb943fbe7aa355f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: -1249775425794969141}
+  playerOffset: {x: 0, y: 2}
