@@ -16,12 +16,12 @@ public class MapSpriteSelector : MonoBehaviour
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
-        generator = GameObject.FindGameObjectWithTag("LevelGenerator").GetComponent<LevelGeneration>();
-        generator.room.Add(gameObject);
+       
         mainColor = normalColor;
         PickSprite();
         PickColor();
         grid = transform.parent;
+        SpawnWalls();
 
     }
     void PickSprite()
@@ -128,7 +128,7 @@ public class MapSpriteSelector : MonoBehaviour
     }
     void SpawnWalls()
     {
-        GameObject a;
+        GameObject a = null;
         if (rend.sprite == spU)
         {
            a = Instantiate(GU, transform.position, Quaternion.identity);
@@ -183,11 +183,12 @@ public class MapSpriteSelector : MonoBehaviour
         }
         if (rend.sprite == spLDR)
         {
-            Instantiate(GLDR, transform.position, Quaternion.identity);
+            a= Instantiate(GLDR, transform.position, Quaternion.identity);
         }
         if (rend.sprite == spUDRL)
         {
            a= Instantiate(GUDRL, transform.position, Quaternion.identity);
         }
+        a.transform.parent = grid;
     }
 }

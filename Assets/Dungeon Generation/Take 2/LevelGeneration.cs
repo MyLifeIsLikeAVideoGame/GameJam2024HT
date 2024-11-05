@@ -10,7 +10,7 @@ public class LevelGeneration : MonoBehaviour
     int gridSizeX, gridSizeY;
     public int numberOfRooms;
     public GameObject roomWhiteObj;
-    public List<GameObject> room;
+    public List<GameObject> roomL;
     public GameObject boss;
     public Vector2 roomSize;
     public GameObject grid;
@@ -235,10 +235,11 @@ public class LevelGeneration : MonoBehaviour
             mapper.right = room.doorRight;
             mapper.left = room.doorLeft;
             mapper.transform.parent = grid.transform;
+            roomL.Add(mapper.gameObject);
         }
     }
     void SetBossRoom()
     {
-        Instantiate(boss, room[room.Count - 1].transform.position, Quaternion.identity);
+        Instantiate(boss, roomL[roomL.Count - 1].transform.position, Quaternion.identity);
     }
 }

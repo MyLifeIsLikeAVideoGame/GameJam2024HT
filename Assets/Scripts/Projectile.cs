@@ -17,8 +17,8 @@ public class Projectile : MonoBehaviour
     void Update()
     {
 
-        RaycastHit2D touchingSolid = Physics2D.Raycast(transform.position, Vector2.up * size, whatIsSolid);     
-        if (touchingSolid)
+        RaycastHit2D touchingSolid = Physics2D.Raycast(transform.position, Vector2.up, size, whatIsSolid);     
+        if (touchingSolid.collider != null)
         {
             if (touchingSolid.collider.GetComponent<Entity>() != null)
             {
