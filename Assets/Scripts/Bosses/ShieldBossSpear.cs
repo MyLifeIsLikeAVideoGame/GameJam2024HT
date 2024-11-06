@@ -6,7 +6,9 @@ public class ShieldBossSpear : MonoBehaviour
 {
     public float waitTime;
     Rigidbody2D rb;
-    public Vector2 vel;
+    public Vector2 vel, squareSize;
+    public LayerMask whatIsSolid;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,10 +20,27 @@ public class ShieldBossSpear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        Collider2D[] touching = Physics2D.OverlapBoxAll(transform.position, squareSize, 0, whatIsSolid);
+        if (touching != null)
+        {
+            foreach (Collider2D t in touching)
+            {
+                if (t.GetComponent<Entity>() != null)
+                {
+                    t.GetComponent<Entity>().TakeDamage(1);
+                    Destroy(gameObject);
+                }
+            }
+        }
     }
     public void SetVelocity()
     {
         rb.velocity = vel;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(transform.position, squareSize);
     }
 }

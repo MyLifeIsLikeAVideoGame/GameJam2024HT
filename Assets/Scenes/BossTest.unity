@@ -486,6 +486,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelGenerator
       objectReference: {fileID: 0}
+    - target: {fileID: 5383780918244576549, guid: f90596b0b5b34b0409759a487db4b05f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5383780918244576550, guid: f90596b0b5b34b0409759a487db4b05f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -669,11 +673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6727651100106747289, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
       propertyPath: health
-      value: 400
-      objectReference: {fileID: 0}
-    - target: {fileID: 6727651100106747289, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
-      propertyPath: maxHealth
-      value: 500
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03c5d00bf68c30548a380f85f5dbd5d7, type: 3}
