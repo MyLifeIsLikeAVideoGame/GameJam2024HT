@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR;
 
 public class BigShieldBoss : Entity
 {
@@ -20,7 +21,7 @@ public class BigShieldBoss : Entity
     // Start is called before the first frame update
     void Start()
     {
-        
+        NewAttack();
     }
 
     // Update is called once per frame
@@ -44,6 +45,7 @@ public class BigShieldBoss : Entity
             else
             {
                 spawning = false;
+                NewAttack();
             }
         }
         if (throwing)
@@ -64,13 +66,16 @@ public class BigShieldBoss : Entity
             else
             {
                 throwing = false;
+                NewAttack();
             }
         }
         if (slamming)
         {
             Slam();
             slamming = false;   
+            NewAttack();
         }
+
     }
     void startThrowing()
     {
@@ -89,9 +94,16 @@ public class BigShieldBoss : Entity
     }
     void NewAttack()
     {
-        int rand = 0;
-        rand = Random.Range(1, 4);
+        
         StartCoroutine(WaitForNewAttack());
+        
+    }
+
+    IEnumerator WaitForNewAttack()
+    {
+        int rand = 0;
+        rand = Random.Range(1, 4); 
+        yield return new WaitForSeconds(2f);
         if (rand == 1)
         {
             startSpawning();
@@ -106,12 +118,6 @@ public class BigShieldBoss : Entity
         }
     }
 
-    IEnumerator WaitForNewAttack()
-    {
-        yield return new WaitForSeconds(1f);
-
-    }
-
     void SpawnEnemy()
     {
         int randEnemy = Random.Range(0, enemies.Length);
@@ -123,7 +129,7 @@ public class BigShieldBoss : Entity
         Instantiate(slamIndicator, slamPos.position,Quaternion.identity);
         GameObject a = Instantiate(slamProjectile, slamPos.position,slamPos.rotation);
         Vector2 dir = slamPos.rotation * Vector2.up;
-        a.GetComponent<ShieldBossSpear>().SetVelocity(dir * shockSpeed);
+        a.GetComponent<ShieldBossSpear>().vel = dir * shockSpeed;
 
     }
     void ThrowSpear()
@@ -133,6 +139,6 @@ public class BigShieldBoss : Entity
        
         GameObject a = Instantiate(SpearProjectile, WeaponSpawnPoints[randPos].position, WeaponSpawnPoints[randPos].rotation);
         Vector2 dir = WeaponSpawnPoints[randPos].rotation * Vector2.up;
-        a.GetComponent<ShieldBossSpear>().SetVelocity(dir * spearSpeed);
+        a.GetComponent<ShieldBossSpear>().vel = dir * spearSpeed;
     }
 }

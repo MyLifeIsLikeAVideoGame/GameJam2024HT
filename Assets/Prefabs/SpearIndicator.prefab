@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6524019592054930138}
   - component: {fileID: 6340249933201433440}
+  - component: {fileID: -9191149431270195954}
   m_Layer: 0
   m_Name: SpearIndicator
   m_TagString: Untagged
@@ -82,3 +83,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-9191149431270195954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338183130944078102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bb13c6296aca1646b83df7530d10d9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitTime: 0.5
