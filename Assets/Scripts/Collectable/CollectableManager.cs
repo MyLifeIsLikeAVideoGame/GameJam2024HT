@@ -12,6 +12,6 @@ public class CollectableManager : MonoBehaviour
 
     private void Update()
     {
-        pointDisplay.text = "Coins: " + pointsCollected;
+        pointDisplay.text = ": " + pointsCollected;
     }
 }
