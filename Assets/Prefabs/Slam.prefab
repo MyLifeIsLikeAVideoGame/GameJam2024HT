@@ -120,6 +120,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 1
   vel: {x: 0, y: 0}
+  squareSize: {x: 8.8, y: 1.8}
+  whatIsSolid:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!114 &-900842479539254475
 MonoBehaviour:
   m_ObjectHideFlags: 0

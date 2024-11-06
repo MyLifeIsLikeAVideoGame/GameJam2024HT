@@ -7,15 +7,14 @@ public class BigShieldBoss : Entity
 {
     [Header("References")]
     public Transform[] WeaponSpawnPoints;
-    public Transform[] enemySpawnPoints;
-    public Transform slamPos;
+    public Transform[] enemySpawnPoints, slamSpawnPoints;
     bool spawning, throwing, slamming;
     public GameObject SpearProjectile, slamProjectile, spearIndicator, slamIndicator;
     public GameObject[] enemies;
     [Header("Stats")]
     public float spawningDuration;
-    public float throwDuration, slamDuration, spawnInterval, throwInterval, spearSpeed, shockSpeed;
-    float startThrowDuration, startSlamDuration, startSpawnDuration, startThrowInterval, startSpawnInterval;
+    public float throwDuration, slamDuration, spawnInterval, throwInterval, spearSpeed, shockSpeed, slamInterval;
+    float startThrowDuration, startSlamDuration, startSpawnDuration, startThrowInterval, startSpawnInterval, startSlamInterval;
     
     
     // Start is called before the first frame update
@@ -71,9 +70,24 @@ public class BigShieldBoss : Entity
         }
         if (slamming)
         {
-            Slam();
-            slamming = false;   
-            NewAttack();
+            if (startSlamDuration > 0)
+            {
+                if (startSlamInterval <= 0)
+                {
+                    Slam();
+                    startSlamInterval = slamInterval;
+                }
+                else
+                {
+                    startSlamInterval -= Time.deltaTime;
+                }
+                startSlamDuration -= Time.deltaTime;
+            }
+            else
+            {
+                slamming = false;
+                NewAttack();
+            }
         }
 
     }
@@ -126,9 +140,10 @@ public class BigShieldBoss : Entity
     }
     void Slam()
     {
-        Instantiate(slamIndicator, slamPos.position,Quaternion.identity);
-        GameObject a = Instantiate(slamProjectile, slamPos.position,slamPos.rotation);
-        Vector2 dir = slamPos.rotation * Vector2.up;
+        int randPos = Random.Range(0, slamSpawnPoints.Length);
+        Instantiate(slamIndicator, slamSpawnPoints[randPos].position,Quaternion.identity);
+        GameObject a = Instantiate(slamProjectile, slamSpawnPoints[randPos].position, slamSpawnPoints[randPos].rotation);
+        Vector2 dir = slamSpawnPoints[randPos].rotation * Vector2.up;
         a.GetComponent<ShieldBossSpear>().vel = dir * shockSpeed;
 
     }
