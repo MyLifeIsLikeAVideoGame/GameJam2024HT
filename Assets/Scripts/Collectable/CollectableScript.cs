@@ -11,11 +11,42 @@ public class CollectableScript : MonoBehaviour
     public CollectableManager collectableManager;
     public PlayerStats playerStats;
 
+    public Transform objTrans;
+    public float delay = 0;
+    public float pasttime = 0;
+    public float when = 1.0f;
+    public Vector3 off;
+
+    public Rigidbody2D rig;
+    public GameObject player;
+    public bool magnetize = false;
+
+    public virtual void Awake()
+    {
+        off = new Vector3(Random.Range(-3, 3), off.y, off.z);
+        off = new Vector3(off.x, Random.Range(-3, 3), off.z);
+    }
+
     private void Start()
     {
+        objTrans = gameObject.GetComponent<Transform>();
         collectSound = gameObject.GetComponent<AudioSource>();
         boxCollider = gameObject.GetComponent<BoxCollider2D>();
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+
+        player = GameObject.FindWithTag("Player");
+        rig = gameObject.GetComponent<Rigidbody2D>();
+        StartCoroutine(Magnet());
+    }
+
+    public virtual void Update()
+    {
+        if (when >= delay)
+        {
+            pasttime = Time.deltaTime;
+            objTrans.position += off * Time.deltaTime;
+            delay += pasttime;
+        }
     }
     public virtual void OnCollisionEnter2D(Collision2D collision)
     {
@@ -70,5 +101,20 @@ public class CollectableScript : MonoBehaviour
         {
             EffectsOnCollect();
         }
+    }
+
+    public virtual void Magnetize(bool activate_magnet)
+    {
+        if (magnetize == true)
+        {
+            Vector3 playerPoint = Vector3.MoveTowards(transform.position, player.transform.position + new Vector3(0, -0.3f, 0), 20 * Time.deltaTime);
+            rig.MovePosition(playerPoint);
+        }
+    }
+
+    public IEnumerator Magnet()
+    {
+        yield return new WaitForSeconds(2f);
+        magnetize = true;
     }
 }

@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PointScript : CollectableScript
 {
+
+    public override void Update()
+    {
+        base.Update();
+        Magnetize(magnetize);
+    }
+
     public override void OnCollisionEnter2D(Collision2D collision)
     {
         CollectAndAddPoints(collision);
