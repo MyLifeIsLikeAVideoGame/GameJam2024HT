@@ -12,11 +12,12 @@ public class MenuScript : MonoBehaviour
     public GameObject pauseMenu;
 
     public float volume;
-
-   
+    public GameObject deathMenu;
+    public PlayerStats player;   
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         pauseMenu.SetActive(false);
     }
 
@@ -63,5 +64,14 @@ public class MenuScript : MonoBehaviour
                 Pause();
             }
         }
+        if (player.health <= 0)
+        {
+            DeathMenu();
+        }
+    }
+
+    void DeathMenu()
+    {
+        deathMenu.SetActive(true);
     }
 }
