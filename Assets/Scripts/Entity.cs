@@ -6,17 +6,10 @@ public class Entity : MonoBehaviour
 {
     public int health;
     public int xpDrop;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public GameObject[] lootTable;
+    public int[] dropChance;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
     public virtual void TakeDamage(int damage)
     {
         health -= damage;
@@ -28,7 +21,26 @@ public class Entity : MonoBehaviour
 
     public virtual void Die()
     {
+        DropLoot(lootTable);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().currentXp += xpDrop;
         Destroy(gameObject);
+    }
+
+    public virtual void DropLoot(GameObject[] possible_loot)
+    {
+        int lootDropChanceRandomizer;
+
+        for (int i = 0; i < possible_loot.Length; i++)
+        {
+            lootDropChanceRandomizer = Random.Range(0, 100);
+
+            if (dropChance[i] >= lootDropChanceRandomizer)
+            {
+                Instantiate(possible_loot[i], transform.position, Quaternion.identity);
+            }
+        }
+
+
+        
     }
 }
