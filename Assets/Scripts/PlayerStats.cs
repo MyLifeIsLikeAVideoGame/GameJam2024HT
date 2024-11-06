@@ -18,6 +18,7 @@ public class PlayerStats : Entity
     public Slider xpBar;
     public TextMeshProUGUI levelText;
     public int statPoints;
+    public int pointsInFireRate;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +67,7 @@ public class PlayerStats : Entity
         if (statPoints > 0)
         {
             power++;
-
+            statPoints--;
         }
     }
     public void IncreaseSpeed()
@@ -74,7 +75,7 @@ public class PlayerStats : Entity
         if (statPoints > 0)
         {
             speed++;
-
+            statPoints--;
         }
     }
     public void IncreaseFireRate()
@@ -82,7 +83,8 @@ public class PlayerStats : Entity
         if (statPoints > 0)
         {
             fireRate *= 0.8f;
-
+            statPoints--;
+            pointsInFireRate++;
         }
     }
 }

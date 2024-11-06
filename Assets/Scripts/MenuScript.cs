@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
@@ -7,17 +8,22 @@ using UnityEngine.SceneManagement;
 
 public class MenuScript : MonoBehaviour
 {
+    public TextMeshProUGUI pointsInPowerText;
+    public TextMeshProUGUI pointsInSpeedText;
+    public TextMeshProUGUI pointsInFirerateText;
+
+    public TextMeshProUGUI statPointsText;
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
 
     public float volume;
     public GameObject deathMenu;
-    public PlayerStats player;   
+    public PlayerStats playerStats;   
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         pauseMenu.SetActive(false);
     }
 
@@ -41,6 +47,10 @@ public class MenuScript : MonoBehaviour
         Time.timeScale = 0;
         pauseMenu.SetActive(true);
         gameIsPaused = true;
+        statPointsText.SetText("Stat Points: " + playerStats.statPoints);
+        pointsInPowerText.SetText("Points: " + playerStats.power);
+        pointsInSpeedText.SetText("Points: " + playerStats.speed);
+        pointsInFirerateText.SetText("Points: " + playerStats.pointsInFireRate);
     }
 
     public void Resume()
@@ -64,7 +74,7 @@ public class MenuScript : MonoBehaviour
                 Pause();
             }
         }
-        if (player.health <= 0)
+        if (playerStats.health <= 0)
         {
             DeathMenu();
         }
@@ -73,5 +83,26 @@ public class MenuScript : MonoBehaviour
     void DeathMenu()
     {
         deathMenu.SetActive(true);
+    }
+
+    public void IncreasePower()
+    {
+        playerStats.IncreasePower();
+        statPointsText.SetText("Stat Points: " + playerStats.statPoints);
+        pointsInPowerText.SetText("Points: " + playerStats.power);
+    }
+
+    public void IncreaseSpeed()
+    {
+        playerStats.IncreaseSpeed();
+        statPointsText.SetText("Stat Points: " + playerStats.statPoints);
+        pointsInSpeedText.SetText("Points: " + playerStats.speed);
+    }
+
+    public void IncreaseFireRate()
+    {
+        playerStats.IncreaseFireRate();
+        statPointsText.SetText("Stat Points: " + playerStats.statPoints);
+        pointsInFirerateText.SetText("Points: " + playerStats.pointsInFireRate);
     }
 }
