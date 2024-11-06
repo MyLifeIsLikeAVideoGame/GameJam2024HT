@@ -82,7 +82,7 @@ public class PlayerStats : Entity
     {
         if (statPoints > 0)
         {
-            fireRate *= 0.8f;
+            fireRate *= 0.95f;
             statPoints--;
             pointsInFireRate++;
         }
