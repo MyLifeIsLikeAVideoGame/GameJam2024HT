@@ -24,6 +24,6 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         float spdMultiplier = 1 + (stats.speed / 10);
-        rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * spdMultiplier);
+        rb.velocity = moveInput.normalized * moveSpeed * spdMultiplier;
     }
 }
