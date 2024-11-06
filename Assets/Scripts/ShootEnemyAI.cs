@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ShootEnemyAI : MonoBehaviour
 {
@@ -11,10 +12,12 @@ public class ShootEnemyAI : MonoBehaviour
     public Transform shotPoint;
     public GameObject bullet;
     float startShootCooldown;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,25 +25,36 @@ public class ShootEnemyAI : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, player.position) <= followRange && Vector2.Distance(transform.position, player.position) > runAwayRange)
         {
+            anim.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
         }
-        
+
 
         if (Vector2.Distance(transform.position, player.position) <= runAwayRange)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, -moveSpeed * Time.deltaTime);
 
+            anim.SetBool("moving", true);
         }
 
-        if (startShootCooldown <= 0)
+        if (Vector2.Distance(transform.position, player.position) > followRange)
         {
-            Shoot();
-            startShootCooldown = shootCooldown;
+            anim.SetBool("moving", false);
+
         }
         else
         {
-            startShootCooldown -= Time.deltaTime;
+            if (startShootCooldown <= 0)
+            {
+                Shoot();
+                startShootCooldown = shootCooldown;
+            }
+            else
+            {
+                startShootCooldown -= Time.deltaTime;
+            }
         }
+       
         
     }
 
@@ -56,7 +70,7 @@ public class ShootEnemyAI : MonoBehaviour
       GameObject a =  Instantiate(bullet, shotPoint.position, shotPoint.rotation);
         Rigidbody2D arb = a.GetComponent<Rigidbody2D>();
         Vector2 dir = shotPoint.rotation * Vector2.up;
-        arb.velocity = dir * 20;
+        arb.velocity = dir * 12;
 
     }
 }
