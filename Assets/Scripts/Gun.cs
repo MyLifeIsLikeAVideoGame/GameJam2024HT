@@ -38,9 +38,12 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        float dmgMultiplier = 1 + (stats.power/5);
         for (int i = 0; i < numberOfbullets; i++)
         {
             GameObject a = Instantiate(bulletPrefab, shootPosition.position, transform.rotation);
+           float total =  a.GetComponent<Projectile>().damage * dmgMultiplier;
+            a.GetComponent<Projectile>().damage = Mathf.RoundToInt(total);
             Rigidbody2D arb = a.GetComponent<Rigidbody2D>();
             Vector2 dir = transform.rotation * Vector2.up;
             Vector2 pdir = Vector2.Perpendicular(dir) * Random.Range(-bulletSpread, bulletSpread);

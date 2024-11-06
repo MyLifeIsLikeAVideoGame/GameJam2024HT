@@ -7,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     Rigidbody2D rb;
     Vector2 moveInput;
+    PlayerStats stats;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        stats = GetComponent<PlayerStats>();
     }
 
     // Update is called once per frame
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveInput.normalized * moveSpeed;
+        float spdMultiplier = 1 + (stats.speed / 10);
+        rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * spdMultiplier);
     }
 }

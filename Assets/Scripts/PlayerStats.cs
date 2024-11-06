@@ -58,4 +58,17 @@ public class PlayerStats : Entity
         levelText.text = "LV: " + level.ToString();
 
     }
+
+    public void IncreasePower()
+    {
+        power++;
+    }
+    public void IncreaseSpeed()
+    {
+        speed++;
+    }
+    public void IncreaseFireRate()
+    {
+        fireRate *= 0.8f ;
+    }
 }
