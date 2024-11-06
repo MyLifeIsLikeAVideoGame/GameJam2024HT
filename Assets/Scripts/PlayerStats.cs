@@ -17,6 +17,7 @@ public class PlayerStats : Entity
     float overflowXp;
     public Slider xpBar;
     public TextMeshProUGUI levelText;
+    public int statPoints;
     // Start is called before the first frame update
     void Start()
     {
@@ -49,6 +50,7 @@ public class PlayerStats : Entity
         if (currentXp >= maxXp)
         {
             level++;
+            statPoints++;
             overflowXp = currentXp - maxXp;
             currentXp = overflowXp;
             maxXp *= 1.1f;
@@ -61,14 +63,26 @@ public class PlayerStats : Entity
 
     public void IncreasePower()
     {
-        power++;
+        if (statPoints > 0)
+        {
+            power++;
+
+        }
     }
     public void IncreaseSpeed()
     {
-        speed++;
+        if (statPoints > 0)
+        {
+            speed++;
+
+        }
     }
     public void IncreaseFireRate()
     {
-        fireRate *= 0.8f ;
+        if (statPoints > 0)
+        {
+            fireRate *= 0.8f;
+
+        }
     }
 }
