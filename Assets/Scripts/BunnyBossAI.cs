@@ -39,7 +39,6 @@ public class BunnyBossAI : MonoBehaviour
             {
                 if (startShootingSideInterval <= 0)
                 {
-                    ThrowSpear();
                     startShootingSideInterval = shootingSideInterval;
                 }
                 else
@@ -60,7 +59,6 @@ public class BunnyBossAI : MonoBehaviour
             {
                 if (startShootingTopInterval <= 0)
                 {
-                    Slam();
                     startShootingTopInterval = shootingTopInterval;
                 }
                 else
@@ -118,11 +116,11 @@ public class BunnyBossAI : MonoBehaviour
         }
     }
 
-    IEnumerator knife()
+    IEnumerator knifeStart()
     {
         for (int i = 0; i < knifeSpawnPoints.Length; i++)
         {
-
+            yield return new WaitForSeconds(0.02f);
         }
     }
 
