@@ -1486,6 +1486,8 @@ MonoBehaviour:
   xpDrop: 0
   lootTable: []
   dropChance: 
+  flashMaterial: {fileID: 2100000, guid: 82aaf5ea6c69e0247bbc08c7db2f947f, type: 2}
+  normalMaterial: {fileID: 0}
   power: 0
   speed: 0
   maxHealth: 3

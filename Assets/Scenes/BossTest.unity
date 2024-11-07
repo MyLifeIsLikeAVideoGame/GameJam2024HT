@@ -2425,6 +2425,14 @@ PrefabInstance:
       propertyPath: bossHealthBar
       value: 
       objectReference: {fileID: 1162953094}
+    - target: {fileID: 2846964416667440544, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
+      propertyPath: flashMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: 82aaf5ea6c69e0247bbc08c7db2f947f, type: 2}
+    - target: {fileID: 2846964416667440544, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
+      propertyPath: normalMaterial
+      value: 
+      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 2846964416667440545, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
       propertyPath: m_RootOrder
       value: 2

@@ -9,9 +9,16 @@ public class Entity : MonoBehaviour
     public GameObject[] lootTable;
     public int[] dropChance;
 
+    public Material flashMaterial, normalMaterial;
+
+    private void Start()
+    {
+        normalMaterial = GetComponent<SpriteRenderer>().material;
+    }
 
     public virtual void TakeDamage(int damage)
     {
+        StartCoroutine("flash");
         health -= damage;
         if (health <= 0)
         {
@@ -42,5 +49,12 @@ public class Entity : MonoBehaviour
 
 
         
+    }
+
+    public IEnumerator flash()
+    {
+        GetComponent<SpriteRenderer>().material = flashMaterial;
+        yield return new WaitForSeconds(0.06f);
+        GetComponent<SpriteRenderer>().material = normalMaterial;
     }
 }

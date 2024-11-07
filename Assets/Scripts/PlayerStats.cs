@@ -35,6 +35,7 @@ public class PlayerStats : Entity
         pointsInFireRate = pointsInFireRateSave.value;
         fireRate = fireRateSave.value;
         overflowXp = overFlowXpSave.value;
+        normalMaterial = GetComponent<SpriteRenderer>().material;
     }
 
     // Update is called once per frame
@@ -109,4 +110,5 @@ public class PlayerStats : Entity
             pointsInFireRate++;
         }
     }
+    
 }
