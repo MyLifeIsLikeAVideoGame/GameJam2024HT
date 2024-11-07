@@ -23,11 +23,10 @@ public class BunnyBossAI : MonoBehaviour
     {
         if (knifing)
         {
-            if (startKnifeDuration > 0)
-            {
-                StartCoroutine(knifeStart());
+           
+                knifeStart();
                 NewAttack();
-            }
+            
         }
         if (shootingSide)
         {
@@ -114,7 +113,7 @@ public class BunnyBossAI : MonoBehaviour
         }
     }
 
-    IEnumerator knifeStart()
+    void knifeStart()
     {
         for (int i = 0; i < knifeSpawnPoints.Length; i++)
         {
@@ -122,7 +121,7 @@ public class BunnyBossAI : MonoBehaviour
             Instantiate(knifeIndicator, knifeSpawnPoints[i].position, knifeSpawnPoints[i].rotation);
             Vector2 dir = knifeSpawnPoints[i].rotation * Vector2.up;
             a.GetComponent<ShieldBossSpear>().vel = dir * knifeSpeed;
-            yield return new WaitForSeconds(0.02f);
+
 
         }
         knifing = false;
