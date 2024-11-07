@@ -242,12 +242,13 @@ public class LevelGeneration : MonoBehaviour
     {
         if (roomL[roomL.Count- 1].GetComponent<MapSpriteSelector>() .type != 1)
         {
-            Instantiate(boss, roomL[roomL.Count - 1].transform.position, Quaternion.identity);
+            boss.transform.position = roomL[roomL.Count - 1].transform.position;
 
         }
         else
         {
-            Instantiate(boss, roomL[roomL.Count].transform.position, Quaternion.identity);
+            boss.transform.position = roomL[roomL.Count].transform.position;
+
 
         }
     }

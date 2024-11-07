@@ -888,6 +888,8 @@ MonoBehaviour:
   bulletSpread: 0.1
   bulletPrefab: {fileID: 7565468345142953964, guid: 4c2ab33ca58815e449ed742c570dd3bd, type: 3}
   shootPosition: {fileID: 6727651100199706795}
+  bulletsSave: {fileID: 0}
+  spreadSave: {fileID: 0}
 --- !u!1 &6727651099053205287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,7 +1030,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &6727651099082310247
 MonoBehaviour:
