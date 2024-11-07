@@ -27,6 +27,11 @@ public class MenuScript : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
+    public void PlaySound()
+    {
+        
+    }
+
     public void NextScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
