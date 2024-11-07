@@ -1156,7 +1156,7 @@ MonoBehaviour:
   throwDuration: 15
   slamDuration: 10
   spawnInterval: 2
-  throwInterval: 1
+  throwInterval: 0.9
   spearSpeed: 20
   shockSpeed: 20
   slamInterval: 1
