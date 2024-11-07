@@ -445,7 +445,7 @@ MonoBehaviour:
   knifeInterval: 0.2
   amountOfShootSideAtOnce: 4
   amountOfShootingTopAtOnce: 4
-  bossPortal: {fileID: 0}
+  bossPortal: {fileID: 8465500792565158900, guid: 1c8eba2f0b1a39a498f2e1f27b4cf807, type: 3}
 --- !u!61 &996135615719272342
 BoxCollider2D:
   m_ObjectHideFlags: 0

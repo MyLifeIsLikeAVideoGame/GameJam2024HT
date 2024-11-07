@@ -18,7 +18,8 @@ public class BigShieldBoss : Entity
     public float throwDuration, slamDuration, spawnInterval, throwInterval, spearSpeed, shockSpeed, slamInterval;
     float startThrowDuration, startSlamDuration, startSpawnDuration, startThrowInterval, startSpawnInterval, startSlamInterval;
     
-    
+    public GameObject bossPortal;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -159,5 +160,11 @@ public class BigShieldBoss : Entity
         GameObject a = Instantiate(SpearProjectile, WeaponSpawnPoints[randPos].position, WeaponSpawnPoints[randPos].rotation);
         Vector2 dir = WeaponSpawnPoints[randPos].rotation * Vector2.up;
         a.GetComponent<ShieldBossSpear>().vel = dir * spearSpeed;
+    }
+
+    public override void Die()
+    {
+        Instantiate(bossPortal, transform.position, Quaternion.identity);
+        base.Die();
     }
 }
