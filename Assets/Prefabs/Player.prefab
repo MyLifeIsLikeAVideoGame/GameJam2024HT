@@ -1722,10 +1722,10 @@ MonoBehaviour:
   hasKey2: 0
   hasKey3: 0
   hasKey4: 0
-  key1: {fileID: 0}
-  key2: {fileID: 0}
-  key3: {fileID: 0}
-  key4: {fileID: 0}
+  key1: {fileID: 11400000, guid: 4e46da38242be2048823e114fb2fc7fc, type: 2}
+  key2: {fileID: 11400000, guid: 7f1d63a976d0d344aa54fb6a287cb28f, type: 2}
+  key3: {fileID: 11400000, guid: 5e11ac59ccb8f074c808a6d9f6b2dcf1, type: 2}
+  key4: {fileID: 11400000, guid: 784171a57cfeea54c91b0423a5d3af6b, type: 2}
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0
