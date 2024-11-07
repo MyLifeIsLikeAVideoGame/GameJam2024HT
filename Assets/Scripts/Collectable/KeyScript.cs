@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class KeyScript : CollectableScript
 {
-
+    public override void Awake()
+    {
+        base.Awake();
+        magneticObject = false;
+    }
     public override void OnCollisionEnter2D(Collision2D collision)
     {
         CollectAndAddPoints(collision);
