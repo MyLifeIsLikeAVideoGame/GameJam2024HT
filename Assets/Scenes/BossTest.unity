@@ -187,7 +187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &801015218
 GameObject:
@@ -2354,7 +2354,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 19
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001595770}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0c60b48a72a70d04d8eaf47c55edb0e0, type: 3}
   m_Name: 
@@ -2408,15 +2408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2846964416667440545, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
       propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846964416667440545, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846964416667440545, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2846964416667440545, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2461,10 +2453,6 @@ PrefabInstance:
     - target: {fileID: 2846964416667440551, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
       propertyPath: m_Name
       value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 2846964417528623161, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14d3e8f2b7eeb914aad0495c91f4870d, type: 3}
