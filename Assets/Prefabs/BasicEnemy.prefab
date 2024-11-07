@@ -116,6 +116,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   xpDrop: 10
+  lootTable:
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
+  dropChance: 5f0000003c00000005000000
 --- !u!50 &314213570261238232
 Rigidbody2D:
   serializedVersion: 4
