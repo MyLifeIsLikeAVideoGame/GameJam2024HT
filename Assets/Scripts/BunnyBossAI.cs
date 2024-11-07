@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class BunnyBossAI : MonoBehaviour
+public class BunnyBossAI : Entity
 {
+    public Slider bossHealthBar;
+
     public bool knifing, shootingSide, shootingTop;
     public Transform[] knifeSpawnPoints, bulletSideSpawnPoints, bulletTopSpawnPoints;
     public GameObject bullet, knife, bulletIndicator, knifeIndicator;
@@ -17,11 +20,13 @@ public class BunnyBossAI : MonoBehaviour
     void Start()
     {
         NewAttack();
+        bossHealthBar.maxValue = health;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bossHealthBar.value = health;
         if (knifing)
         {
 
@@ -40,6 +45,7 @@ public class BunnyBossAI : MonoBehaviour
             }
             else
             {
+                knifing = false;
                 NewAttack();
             }
             
@@ -139,7 +145,7 @@ public class BunnyBossAI : MonoBehaviour
         knifePosCount++;
         if (knifePosCount + 1 == knifeSpawnPoints.Length)
         {
-            knifing = false;
+            knifePosCount = 0;
 
         }
     }
