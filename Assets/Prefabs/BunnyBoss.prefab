@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 996135615719272363}
   - component: {fileID: 996135615719272341}
   - component: {fileID: 996135615719272342}
+  - component: {fileID: 996135616331500150}
   m_Layer: 8
   m_Name: BunnyBoss
   m_TagString: Untagged
@@ -332,8 +333,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 2571549679270421569, guid: 6bb1a8814025a954abc92edfb3dd9afb, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -444,6 +445,7 @@ MonoBehaviour:
   knifeInterval: 0.2
   amountOfShootSideAtOnce: 4
   amountOfShootingTopAtOnce: 4
+  bossPortal: {fileID: 0}
 --- !u!61 &996135615719272342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -457,19 +459,38 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.024841875, y: -0.035488486}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.4514174, y: 1.45}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6948008, y: 1.2839067}
   m_EdgeRadius: 0
+--- !u!95 &996135616331500150
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996135615719272362}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f99d3dc07ecbff64ab1c21dc74e99140, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &996135615779692670
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,6 @@ public class PortalScript : MonoBehaviour
     void Update()
     {
         anim = GameObject.FindGameObjectWithTag("SceneTransitioner").GetComponent<Animator>();
-        shopMenu = GameObject.FindGameObjectWithTag("ShopManager").GetComponentInChildren<Canvas>().gameObject;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

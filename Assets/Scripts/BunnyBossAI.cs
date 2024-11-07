@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BunnyBossAI : Entity
 {
@@ -16,6 +17,7 @@ public class BunnyBossAI : Entity
     float startKnifeDuration, startShootingSideDuration, startShootingTopDuration, startShootingSideInterval, startShootingTopInterval, startKnifeInterval;
     public int amountOfShootSideAtOnce, amountOfShootingTopAtOnce;
     int knifePosCount;
+    public GameObject bossPortal;
     // Start is called before the first frame update
     void Start()
     {
@@ -173,6 +175,10 @@ public class BunnyBossAI : Entity
             
         }
     }
-    
 
+    public override void Die()
+    {
+        Instantiate(bossPortal, transform.position, Quaternion.identity);
+        base.Die();
+    }
 }

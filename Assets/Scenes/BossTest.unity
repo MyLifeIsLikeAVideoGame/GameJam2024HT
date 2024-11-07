@@ -196,6 +196,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 862444859019732616, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1003661676826705079, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -332,6 +336,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pause UI
       objectReference: {fileID: 0}
+    - target: {fileID: 5023302364685213333, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5985970026264777772, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -387,6 +395,10 @@ PrefabInstance:
     - target: {fileID: 6982982805808244877, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759310522664953427, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d7222e6015cabe4ba8b68d21f5568d8, type: 3}
@@ -2532,7 +2544,7 @@ Transform:
   m_Children:
   - {fileID: 801015219}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1403426976 stripped
 MonoBehaviour:
