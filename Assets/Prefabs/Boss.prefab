@@ -981,8 +981,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 750
   xpDrop: 300
-  lootTable: []
-  dropChance: 
+  lootTable:
+  - {fileID: 1564387325123747279, guid: 08233d590e10e4847b5b8f90d982aeb5, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
+  - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
+  dropChance: 65000000650000006500000065000000650000006500000065000000
   WeaponSpawnPoints:
   - {fileID: 2846964416517691481}
   - {fileID: 4658739856167196971}

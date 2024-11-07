@@ -491,7 +491,7 @@ PrefabInstance:
     - target: {fileID: 3476595144761781100, guid: 41642e16034e39546a555a58379c28ff, type: 3}
       propertyPath: lootTable.Array.data[1]
       value: 
-      objectReference: {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+      objectReference: {fileID: 1564387325123747279, guid: 08233d590e10e4847b5b8f90d982aeb5, type: 3}
     - target: {fileID: 3476595144761781100, guid: 41642e16034e39546a555a58379c28ff, type: 3}
       propertyPath: dropChance.Array.data[0]
       value: 50
