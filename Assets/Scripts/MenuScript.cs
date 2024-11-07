@@ -16,6 +16,7 @@ public class MenuScript : MonoBehaviour
     public static bool gameIsPaused;
 
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
 
     public float volume;
     public GameObject deathMenu;
@@ -24,7 +25,12 @@ public class MenuScript : MonoBehaviour
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+
+        optionsMenu.SetActive(false);
         pauseMenu.SetActive(false);
+        
+
+
     }
 
     public void PlaySound()
