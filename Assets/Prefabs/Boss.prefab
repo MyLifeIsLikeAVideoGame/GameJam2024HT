@@ -908,7 +908,7 @@ Transform:
   m_GameObject: {fileID: 2846964416667440551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 11.37, z: 0}
-  m_LocalScale: {x: 6.3497925, y: 6.3497925, z: 6.3497925}
+  m_LocalScale: {x: 6, y: 6, z: 6.3497925}
   m_Children:
   - {fileID: 5939076615475455806}
   - {fileID: 2846964417281324076}
@@ -979,7 +979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedbbb94cbcf1f04d92d6ba1b26a2474, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1000
+  health: 750
   xpDrop: 300
   lootTable: []
   dropChance: 
@@ -1072,7 +1072,7 @@ MonoBehaviour:
   spawnInterval: 2
   throwInterval: 1
   spearSpeed: 20
-  shockSpeed: 10
+  shockSpeed: 20
   slamInterval: 1
 --- !u!61 &2846964416667440547
 BoxCollider2D:
@@ -1087,18 +1087,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.10791308, y: -0.17117321}
+  m_Offset: {x: -0.11420342, y: 0.030120015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5627649, y: 0.48146728}
-    oldSize: {x: 4.285714, y: 3.922857}
+    oldSize: {x: 2, y: 1.8306667}
     newSize: {x: 4.285714, y: 3.7014284}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.0195951, y: 3.247574}
+  m_Size: {x: 1.3276496, y: 1.7881975}
   m_EdgeRadius: 0
 --- !u!1 &2846964416754591423
 GameObject:
