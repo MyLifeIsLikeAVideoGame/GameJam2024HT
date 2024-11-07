@@ -9,9 +9,10 @@ public class BunnyBossAI : MonoBehaviour
     public GameObject bullet, knife, bulletIndicator, knifeIndicator;
 
     public float knifeDuration;
-    public float shootingSideDuration, shootingTopDuration, shootingSideInterval, shootingTopInterval, bulletSpeed, knifeSpeed;
-    float startKnifeDuration, startShootingSideDuration, startShootingTopDuration, startShootingSideInterval, startShootingTopInterval;
+    public float shootingSideDuration, shootingTopDuration, shootingSideInterval, shootingTopInterval, bulletSpeed, knifeSpeed, knifeInterval;
+    float startKnifeDuration, startShootingSideDuration, startShootingTopDuration, startShootingSideInterval, startShootingTopInterval, startKnifeInterval;
     public int amountOfShootSideAtOnce, amountOfShootingTopAtOnce;
+    int knifePosCount;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,14 +24,29 @@ public class BunnyBossAI : MonoBehaviour
     {
         if (knifing)
         {
-           
-                knifeStart();
+
+            if (startKnifeDuration > 0)
+            {
+                if (startKnifeInterval <= 0)
+                {
+                    knifeStart();
+                    startKnifeInterval = knifeInterval;
+                }
+                else
+                {
+                    startKnifeInterval -= Time.deltaTime;
+                }
+                startKnifeDuration -= Time.deltaTime;
+            }
+            else
+            {
                 NewAttack();
+            }
             
         }
         if (shootingSide)
         {
-            if (shootingSideDuration > 0)
+            if (startShootingSideDuration > 0)
             {
                 if (startShootingSideInterval <= 0)
                 {
@@ -115,16 +131,17 @@ public class BunnyBossAI : MonoBehaviour
 
     void knifeStart()
     {
-        for (int i = 0; i < knifeSpawnPoints.Length; i++)
-        {
-           GameObject a = Instantiate(knife, knifeSpawnPoints[i].position, knifeSpawnPoints[i].rotation);
-            Instantiate(knifeIndicator, knifeSpawnPoints[i].position, knifeSpawnPoints[i].rotation);
-            Vector2 dir = knifeSpawnPoints[i].rotation * Vector2.up;
+        
+           GameObject a = Instantiate(knife, knifeSpawnPoints[knifePosCount].position, knifeSpawnPoints[knifePosCount].rotation);
+            Instantiate(knifeIndicator, knifeSpawnPoints[knifePosCount].position, knifeSpawnPoints[knifePosCount].rotation);
+            Vector2 dir = knifeSpawnPoints[knifePosCount].rotation * Vector2.up;
             a.GetComponent<ShieldBossSpear>().vel = dir * knifeSpeed;
-
+        knifePosCount++;
+        if (knifePosCount + 1 == knifeSpawnPoints.Length)
+        {
+            knifing = false;
 
         }
-        knifing = false;
     }
 
     public void ShootSide()
@@ -147,7 +164,9 @@ public class BunnyBossAI : MonoBehaviour
             Instantiate(bulletIndicator, bulletTopSpawnPoints[randPos].position, bulletTopSpawnPoints[randPos].rotation);
             Vector2 dir = bulletTopSpawnPoints[randPos].rotation * Vector2.up;
             a.GetComponent<ShieldBossSpear>().vel = dir * bulletSpeed;
+            
         }
     }
+    
 
 }

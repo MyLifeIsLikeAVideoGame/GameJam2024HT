@@ -1145,13 +1145,14 @@ MonoBehaviour:
   knife: {fileID: 1690588796714929627, guid: 1e8c2d9c748cb484f94176dec16170be, type: 3}
   bulletIndicator: {fileID: 7076524966971067483, guid: abc6354574271f745a91469a07b15bdb, type: 3}
   knifeIndicator: {fileID: 8594510643095741583, guid: 8440a4594d525a6479f109f3975d5879, type: 3}
-  knifeDuration: 10
+  knifeDuration: 4
   shootingSideDuration: 7
   shootingTopDuration: 7
   shootingSideInterval: 1
   shootingTopInterval: 1
   bulletSpeed: 20
   knifeSpeed: 30
+  knifeInterval: 0.1
   amountOfShootSideAtOnce: 3
   amountOfShootingTopAtOnce: 3
 --- !u!1 &664148704

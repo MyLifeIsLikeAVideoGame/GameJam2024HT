@@ -206,5 +206,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53010f144916aed48abc80c0c4e1b869, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 0.7
+  waitTime: 1.2
   vel: {x: 0, y: 0}
