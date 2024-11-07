@@ -21,7 +21,7 @@ public class ShieldBossSpear : MonoBehaviour
         if(collision.CompareTag("Player"))
         {
             collision.GetComponent<Entity>().TakeDamage(1);
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 
