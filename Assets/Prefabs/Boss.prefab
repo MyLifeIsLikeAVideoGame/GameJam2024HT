@@ -1066,6 +1066,8 @@ MonoBehaviour:
   - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
   - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
   dropChance: 65000000650000006500000065000000650000006500000065000000
+  flashMaterial: {fileID: 0}
+  normalMaterial: {fileID: 0}
   bossHealthBar: {fileID: 0}
   WeaponSpawnPoints:
   - {fileID: 2846964416517691481}
@@ -3150,7 +3152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &7632279720856133522
@@ -3234,7 +3236,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 320, y: 60}
+  m_SizeDelta: {x: 450, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5134887995907432571
 MonoBehaviour:

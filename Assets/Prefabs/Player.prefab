@@ -1516,6 +1516,7 @@ MonoBehaviour:
   fireRateSave: {fileID: 11400000, guid: 2e257b4beffe22d489a4b2af536f591f, type: 2}
   maxXpSave: {fileID: 11400000, guid: f6524caaf7d777844a661bea64daa03e, type: 2}
   overFlowXpSave: {fileID: 11400000, guid: a3c7bade8f6e8034f80c09b5b58a3377, type: 2}
+  xpSave: {fileID: 11400000, guid: c730a8106534ac34a914da197e2e151a, type: 2}
 --- !u!95 &6727651099284525685
 Animator:
   serializedVersion: 3
