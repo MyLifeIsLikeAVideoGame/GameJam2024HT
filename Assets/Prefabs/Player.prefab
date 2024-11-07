@@ -1482,14 +1482,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2e60c1c664e454cb2790a006f37cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 3
   xpDrop: 0
   lootTable: []
   dropChance: 
   power: 0
   speed: 0
-  maxHealth: 100
-  fireRate: 0.2
+  maxHealth: 3
+  fireRate: 1
   hearts:
   - {fileID: 376621339}
   - {fileID: 1415190581}
@@ -1503,15 +1503,15 @@ MonoBehaviour:
   levelText: {fileID: 5064664413328559739}
   statPoints: 0
   pointsInFireRate: 0
-  powerSave: {fileID: 0}
-  speedSave: {fileID: 0}
-  healthSave: {fileID: 0}
-  levelSave: {fileID: 0}
-  statPointsSave: {fileID: 0}
-  pointsInFireRateSave: {fileID: 0}
-  fireRateSave: {fileID: 0}
-  maxXpSave: {fileID: 0}
-  overFlowXpSave: {fileID: 0}
+  powerSave: {fileID: 11400000, guid: c70e0abdef4e03f4aae814df5d069e50, type: 2}
+  speedSave: {fileID: 11400000, guid: 81463edb79b0d9946a690ac1f1a5c1e8, type: 2}
+  healthSave: {fileID: 11400000, guid: 9973379b65584fb4c88aad6c3cb91160, type: 2}
+  levelSave: {fileID: 11400000, guid: 477cd3ff347dce14784c6b5c12ad15c1, type: 2}
+  statPointsSave: {fileID: 11400000, guid: 998ccaeb6cdd28642b2d7857e71a8591, type: 2}
+  pointsInFireRateSave: {fileID: 11400000, guid: 9e3e1ae7697dbdc4587748c6da8a11b6, type: 2}
+  fireRateSave: {fileID: 11400000, guid: 2e257b4beffe22d489a4b2af536f591f, type: 2}
+  maxXpSave: {fileID: 11400000, guid: f6524caaf7d777844a661bea64daa03e, type: 2}
+  overFlowXpSave: {fileID: 11400000, guid: a3c7bade8f6e8034f80c09b5b58a3377, type: 2}
 --- !u!95 &6727651099284525685
 Animator:
   serializedVersion: 3
@@ -1546,6 +1546,8 @@ MonoBehaviour:
   keysCollected: 0
   pointsCollected: 0
   pointDisplay: {fileID: 776086866}
+  keysSave: {fileID: 11400000, guid: bc11f9d2811959f49baf5a76e5219174, type: 2}
+  pointsSave: {fileID: 11400000, guid: 7179d860addb9634ab8e890d94321d15, type: 2}
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0

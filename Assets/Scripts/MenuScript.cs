@@ -48,9 +48,9 @@ public class MenuScript : MonoBehaviour
         pauseMenu.SetActive(true);
         gameIsPaused = true;
         statPointsText.SetText("Stat Points: " + playerStats.statPoints);
-        pointsInPowerText.SetText("Points: " + playerStats.power);
-        pointsInSpeedText.SetText("Points: " + playerStats.speed);
-        pointsInFirerateText.SetText("Points: " + playerStats.pointsInFireRate);
+        pointsInPowerText.SetText("Stat Points: " + playerStats.power);
+        pointsInSpeedText.SetText("Stat Points: " + playerStats.speed);
+        pointsInFirerateText.SetText("Stat Points: " + playerStats.pointsInFireRate);
     }
 
     public void Resume()
@@ -89,20 +89,20 @@ public class MenuScript : MonoBehaviour
     {
         playerStats.IncreasePower();
         statPointsText.SetText("Stat Points: " + playerStats.statPoints);
-        pointsInPowerText.SetText("Points: " + playerStats.power);
+        pointsInPowerText.SetText("Stat Points: " + playerStats.power);
     }
 
     public void IncreaseSpeed()
     {
         playerStats.IncreaseSpeed();
         statPointsText.SetText("Stat Points: " + playerStats.statPoints);
-        pointsInSpeedText.SetText("Points: " + playerStats.speed);
+        pointsInSpeedText.SetText("Stat Points: " + playerStats.speed);
     }
 
     public void IncreaseFireRate()
     {
         playerStats.IncreaseFireRate();
         statPointsText.SetText("Stat Points: " + playerStats.statPoints);
-        pointsInFirerateText.SetText("Points: " + playerStats.pointsInFireRate);
+        pointsInFirerateText.SetText("Stat Points: " + playerStats.pointsInFireRate);
     }
 }
