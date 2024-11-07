@@ -7,6 +7,7 @@ public class EnemyFollowPlayerAI : MonoBehaviour
     public float range, moveSpeed;
     public Transform player;
     bool playerDetected;
+    bool kb, move = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,21 +26,43 @@ public class EnemyFollowPlayerAI : MonoBehaviour
             playerDetected = false;
 
         }
-        if (playerDetected)
+        if (playerDetected && !kb && move)
         {
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
         }
 
+        if (kb && !move)
+        {
+            transform.position = Vector2.MoveTowards(transform.position, player.position, -moveSpeed * Time.deltaTime * 4);
+
+        }
+
     }
-    private void FixedUpdate()
-    {
-        
-    }
+ 
 
     private void OnDrawGizmosSelected()
     {
        Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.collider.CompareTag("Player") && kb != true)
+        {
+            collision.collider.GetComponent<PlayerStats>().health--;
+            StartCoroutine(kbStart());
+        }
+    }
+
+    IEnumerator kbStart()
+    {
+        move = false;
+        kb = true;
+        yield return new WaitForSeconds(.2f);
+        kb = false;
+        yield return new WaitForSeconds(.4f);
+        move = true;
     }
 }

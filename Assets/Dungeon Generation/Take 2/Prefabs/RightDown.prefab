@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6435546613686344110}
   - component: {fileID: 2518212883491591748}
   - component: {fileID: 7028192427953412683}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DownTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -301,7 +301,7 @@ GameObject:
   - component: {fileID: 8767180029989529727}
   - component: {fileID: 1749874425011956224}
   - component: {fileID: 5308503099726906622}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -8091984078337954550}
   - component: {fileID: -1274974555766427534}
   m_Layer: 6
-  m_Name: RightLeft
+  m_Name: RIghtLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1719,7 +1719,7 @@ GameObject:
   - component: {fileID: 6553011623525219651}
   - component: {fileID: 7532808173119135588}
   - component: {fileID: 5465666020977013843}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1823,7 +1823,7 @@ GameObject:
   - component: {fileID: 3346764461340538444}
   - component: {fileID: 197196178153360608}
   - component: {fileID: 5050917978328027858}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RightTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

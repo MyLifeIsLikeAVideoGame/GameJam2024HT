@@ -227,7 +227,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneName: BossTest
-  anim: {fileID: 0}
+  anim: {fileID: 1330424276207980211}
+  shopMenu: {fileID: 0}
 --- !u!114 &6977661860539507280
 MonoBehaviour:
   m_ObjectHideFlags: 0

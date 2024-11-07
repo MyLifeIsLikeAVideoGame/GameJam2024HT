@@ -10,10 +10,14 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform shootPosition;
     PlayerStats stats;
+    public IntValue bulletsSave;
+    public FloatValue spreadSave;
     // Start is called before the first frame update
     void Start()
     {
         stats = GetComponentInParent<PlayerStats>();
+        bulletSpread = spreadSave.value;
+        numberOfbullets = bulletsSave.value;
     }
 
     // Update is called once per frame
@@ -33,7 +37,9 @@ public class Gun : MonoBehaviour
             }
             
         }
-        
+
+        spreadSave.value = bulletSpread;
+        bulletsSave.value = numberOfbullets;
     }
 
     void Shoot()
