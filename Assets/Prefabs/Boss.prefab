@@ -1067,9 +1067,9 @@ MonoBehaviour:
   - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
   - {fileID: 1564387325123747279, guid: 825369e097c8645428f5323e23cb65f8, type: 3}
   dropChance: 6500000065000000650000006500000065000000650000006500000065000000
-  flashMaterial: {fileID: 0}
-  normalMaterial: {fileID: 0}
-  bossHealthBar: {fileID: 0}
+  flashMaterial: {fileID: 2100000, guid: 82aaf5ea6c69e0247bbc08c7db2f947f, type: 2}
+  normalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  bossHealthBar: {fileID: 5134887995907432571}
   WeaponSpawnPoints:
   - {fileID: 2846964416517691481}
   - {fileID: 4658739856167196971}
@@ -2440,10 +2440,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -3237,8 +3237,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 450, y: 60}
+  m_AnchoredPosition: {x: 0, y: -1036}
+  m_SizeDelta: {x: 986.547, y: 83.328}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5134887995907432571
 MonoBehaviour:
