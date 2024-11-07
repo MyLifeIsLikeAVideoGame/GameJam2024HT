@@ -7,16 +7,18 @@ public class PortalScript : MonoBehaviour
 {
     public string sceneName;
     public Animator anim;
+    public GameObject shopMenu;
     // Start is called before the first frame update
     void Start()
     {
-        anim = GameObject.FindGameObjectWithTag("SceneTransitioner").GetComponent<Animator>();
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        anim = GameObject.FindGameObjectWithTag("SceneTransitioner").GetComponent<Animator>();
+        shopMenu = GameObject.FindGameObjectWithTag("ShopManager");
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,6 +34,7 @@ public class PortalScript : MonoBehaviour
     {
         anim.SetTrigger("fade");
         yield return new WaitForSeconds(1.5f);
-            SceneManager.LoadScene(sceneName);
+        shopMenu.SetActive(true);
     }
+    
 }

@@ -20,6 +20,7 @@ public class CollectableScript : MonoBehaviour
     public Rigidbody2D rig;
     public GameObject player;
     public bool magnetize = false;
+    public bool magneticObject = true;
 
     public virtual void Awake()
     {
@@ -36,7 +37,12 @@ public class CollectableScript : MonoBehaviour
 
         player = GameObject.FindWithTag("Player");
         rig = gameObject.GetComponent<Rigidbody2D>();
-        StartCoroutine(Magnet());
+
+        if (magneticObject == true)
+        {
+            StartCoroutine(Magnet());
+        }
+        
     }
 
     public virtual void Update()
