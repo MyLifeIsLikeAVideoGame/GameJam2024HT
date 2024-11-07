@@ -888,8 +888,8 @@ MonoBehaviour:
   bulletSpread: 0.1
   bulletPrefab: {fileID: 7565468345142953964, guid: 4c2ab33ca58815e449ed742c570dd3bd, type: 3}
   shootPosition: {fileID: 6727651100199706795}
-  bulletsSave: {fileID: 0}
-  spreadSave: {fileID: 0}
+  bulletsSave: {fileID: 11400000, guid: 4026c8a67d0e86b4eab7fec8f7931006, type: 2}
+  spreadSave: {fileID: 11400000, guid: 8ecc872b2e29890448763f4f22e486c6, type: 2}
 --- !u!1 &6727651099053205287
 GameObject:
   m_ObjectHideFlags: 0

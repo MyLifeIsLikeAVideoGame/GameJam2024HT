@@ -37,6 +37,7 @@ public class Gun : MonoBehaviour
             }
             
         }
+
         spreadSave.value = bulletSpread;
         bulletsSave.value = numberOfbullets;
     }

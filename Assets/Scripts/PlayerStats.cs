@@ -22,7 +22,7 @@ public class PlayerStats : Entity
     public int pointsInFireRate;
 
     public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
-    public FloatValue fireRateSave, maxXpSave, overFlowXpSave;
+    public FloatValue fireRateSave, maxXpSave, overFlowXpSave, xpSave;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class PlayerStats : Entity
         pointsInFireRate = pointsInFireRateSave.value;
         fireRate = fireRateSave.value;
         overflowXp = overFlowXpSave.value;
+        currentXp = xpSave.value;
         normalMaterial = GetComponent<SpriteRenderer>().material;
     }
 
@@ -78,6 +79,7 @@ public class PlayerStats : Entity
         pointsInFireRateSave.value = pointsInFireRate;
         fireRateSave.value = fireRate;
         overFlowXpSave.value = overflowXp       ;
+        xpSave.value = currentXp;
 
         xpBar.value = currentXp;
         xpBar.maxValue = maxXp;
