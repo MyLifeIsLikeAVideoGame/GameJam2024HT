@@ -240,6 +240,15 @@ public class LevelGeneration : MonoBehaviour
     }
     void SetBossRoom()
     {
-        Instantiate(boss, roomL[roomL.Count - 1].transform.position, Quaternion.identity);
+        if (roomL[roomL.Count- 1].GetComponent<MapSpriteSelector>() .type != 1)
+        {
+            Instantiate(boss, roomL[roomL.Count - 1].transform.position, Quaternion.identity);
+
+        }
+        else
+        {
+            Instantiate(boss, roomL[roomL.Count].transform.position, Quaternion.identity);
+
+        }
     }
 }

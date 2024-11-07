@@ -122,9 +122,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eb6bfe71205a3214e8b3182af847d880, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 66457d9cbb2091245ba09bded43f6e31, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -233,6 +233,7 @@ MonoBehaviour:
   rig: {fileID: 0}
   player: {fileID: 0}
   magnetize: 0
+  magneticObject: 1
 --- !u!50 &1656176527564362060
 Rigidbody2D:
   serializedVersion: 4
