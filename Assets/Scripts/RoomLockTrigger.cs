@@ -22,7 +22,7 @@ public class RoomLockTrigger : MonoBehaviour
     {
         if (other.CompareTag("Player") && room.enemiesDefeated == false)
         {
-            other.transform.position += new Vector3(playerOffset.x, playerOffset.y, 0);
+            other.transform.position += new Vector3(playerOffset.x , playerOffset.y * 2, 0);
             room.Lock();
             
         }

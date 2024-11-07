@@ -95,6 +95,8 @@ GameObject:
   - component: {fileID: 4402739938661157282}
   - component: {fileID: 8342789975719772151}
   - component: {fileID: 1330424276207980211}
+  - component: {fileID: 644979116053610237}
+  - component: {fileID: 6977661860539507280}
   m_Layer: 0
   m_Name: Portal_spritesheet_0
   m_TagString: Untagged
@@ -212,3 +214,33 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &644979116053610237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692676360000198370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52413dd2cacf6b24ba41a0bc2d5d8183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: BossTest
+  anim: {fileID: 0}
+--- !u!114 &6977661860539507280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692676360000198370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb2a759723f26cc4a8588bce58189b36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  range: {x: 44, y: 20}
+  whatIsenemy:
+    serializedVersion: 2
+    m_Bits: 256

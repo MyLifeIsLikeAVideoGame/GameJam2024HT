@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class PortalScript : MonoBehaviour
 {
     public string sceneName;
+    public Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GameObject.FindGameObjectWithTag("SceneTransitioner").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -22,7 +23,15 @@ public class PortalScript : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(sceneName);
+
+            StartCoroutine(SceneTransition());
         }
+    }
+
+    IEnumerator SceneTransition()
+    {
+        anim.SetTrigger("fade");
+        yield return new WaitForSeconds(1.5f);
+            SceneManager.LoadScene(sceneName);
     }
 }

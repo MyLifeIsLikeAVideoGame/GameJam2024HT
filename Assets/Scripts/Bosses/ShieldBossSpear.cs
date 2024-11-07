@@ -20,7 +20,7 @@ public class ShieldBossSpear : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Collider2D[] touching = Physics2D.OverlapBoxAll(transform.position, squareSize, 0, whatIsSolid);
+        Collider2D[] touching = Physics2D.OverlapBoxAll(transform.position, squareSize, transform.rotation.z, whatIsSolid);
         if (touching != null)
         {
             foreach (Collider2D t in touching)

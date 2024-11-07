@@ -1131,6 +1131,7 @@ GameObject:
   - component: {fileID: 6727651100106747290}
   - component: {fileID: 6727651100106747291}
   - component: {fileID: 6727651100106747289}
+  - component: {fileID: 6727651099284525685}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1196,8 +1197,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 0.47798735, g: 0.6031854, b: 1, a: 1}
+  m_Sprite: {fileID: -1090183093138673551, guid: 90563437dc498b946a696651b9e834ab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1242,7 +1243,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7971226, y: 2.4943142}
   m_Direction: 0
 --- !u!114 &6727651100106747291
 MonoBehaviour:
@@ -1269,7 +1270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d2e60c1c664e454cb2790a006f37cd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 3
   xpDrop: 0
   lootTable: []
   dropChance: 
@@ -1290,6 +1291,25 @@ MonoBehaviour:
   levelText: {fileID: 5064664413328559739}
   statPoints: 0
   pointsInFireRate: 0
+--- !u!95 &6727651099284525685
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6727651100106747287}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: eca552985c2333a438aa4f281d3ce833, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0

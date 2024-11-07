@@ -9,6 +9,7 @@ TagManager:
   - LevelGenerator
   - DialogueManager
   - Key
+  - SceneTransitioner
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 192847700569374963}
   - component: {fileID: 192847700569374962}
   - component: {fileID: 192847700569374960}
+  - component: {fileID: 4063804058320061740}
   m_Layer: 6
   m_Name: MapSprite
   m_TagString: Untagged
@@ -132,3 +133,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4063804058320061740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192847700569374965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2303f681d2dbc144facd6a41183da894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  room: {fileID: 192847700569374962}
+  minSpawn: {x: -15, y: -6}
+  maxSpawn: {x: 15, y: 6}
+  enemies:
+  - {fileID: 314213570261238237, guid: c6e303cfda1a36b46aa66eeeacd4c500, type: 3}
+  - {fileID: 3476595144761781096, guid: 41642e16034e39546a555a58379c28ff, type: 3}
+  minEnemies: 2
+  maxEnemies: 3
