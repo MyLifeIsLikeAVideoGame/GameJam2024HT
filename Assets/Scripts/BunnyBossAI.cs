@@ -24,12 +24,8 @@ public class BunnyBossAI : MonoBehaviour
         if (knifing)
         {
             if (startKnifeDuration > 0)
-            {               
-                startKnifeDuration -= Time.deltaTime;
-            }
-            else
             {
-                knifing = false;
+                StartCoroutine(knifeStart());
                 NewAttack();
             }
         }
@@ -39,6 +35,7 @@ public class BunnyBossAI : MonoBehaviour
             {
                 if (startShootingSideInterval <= 0)
                 {
+                    ShootSide();
                     startShootingSideInterval = shootingSideInterval;
                 }
                 else
@@ -59,6 +56,7 @@ public class BunnyBossAI : MonoBehaviour
             {
                 if (startShootingTopInterval <= 0)
                 {
+                    ShootTop();
                     startShootingTopInterval = shootingTopInterval;
                 }
                 else
@@ -120,7 +118,36 @@ public class BunnyBossAI : MonoBehaviour
     {
         for (int i = 0; i < knifeSpawnPoints.Length; i++)
         {
+           GameObject a = Instantiate(knife, knifeSpawnPoints[i].position, knifeSpawnPoints[i].rotation);
+            Instantiate(knifeIndicator, knifeSpawnPoints[i].position, knifeSpawnPoints[i].rotation);
+            Vector2 dir = knifeSpawnPoints[i].rotation * Vector2.up;
+            a.GetComponent<ShieldBossSpear>().vel = dir * knifeSpeed;
             yield return new WaitForSeconds(0.02f);
+
+        }
+        knifing = false;
+    }
+
+    public void ShootSide()
+    {
+        for (int i = 0; i < amountOfShootSideAtOnce; i++)
+        {
+            int randPos = Random.Range(0, bulletSideSpawnPoints.Length);
+          GameObject a = Instantiate(bullet, bulletSideSpawnPoints[randPos].position, bulletSideSpawnPoints[randPos].rotation);
+            Instantiate(bulletIndicator, bulletSideSpawnPoints[randPos].position, bulletSideSpawnPoints[randPos].rotation);
+            Vector2 dir = bulletSideSpawnPoints[randPos].rotation * Vector2.up;
+            a.GetComponent<ShieldBossSpear>().vel = dir * bulletSpeed;
+        }
+    } 
+    public void ShootTop()
+    {
+        for (int i = 0; i < amountOfShootingTopAtOnce; i++)
+        {
+            int randPos = Random.Range(0, bulletTopSpawnPoints.Length);
+            GameObject a =  Instantiate(bullet, bulletTopSpawnPoints[randPos].position, bulletTopSpawnPoints[randPos].rotation);
+            Instantiate(bulletIndicator, bulletTopSpawnPoints[randPos].position, bulletTopSpawnPoints[randPos].rotation);
+            Vector2 dir = bulletTopSpawnPoints[randPos].rotation * Vector2.up;
+            a.GetComponent<ShieldBossSpear>().vel = dir * bulletSpeed;
         }
     }
 
