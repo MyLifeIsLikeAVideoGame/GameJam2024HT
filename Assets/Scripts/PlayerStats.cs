@@ -13,16 +13,28 @@ public class PlayerStats : Entity
     public Sprite fullHeart, emptyHeart;
 
    [HideInInspector] public float currentXp;
-    public float level, maxXp;
+    public int level;
+     public float maxXp;
     float overflowXp;
     public Slider xpBar;
     public TextMeshProUGUI levelText;
     public int statPoints;
     public int pointsInFireRate;
+
+    public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
+    public FloatValue fireRateSave, maxXpSave, overFlowXpSave;
     // Start is called before the first frame update
     void Start()
     {
-        
+        power = powerSave.value;
+        speed = speedSave.value;
+        health = healthSave.value;
+        level = levelSave.value;
+        maxXp = maxXpSave.value;
+        statPoints = statPointsSave.value;
+        pointsInFireRate = pointsInFireRateSave.value;
+        fireRate = fireRateSave.value;
+        overflowXp = overFlowXpSave.value;
     }
 
     // Update is called once per frame
@@ -56,6 +68,16 @@ public class PlayerStats : Entity
             currentXp = overflowXp;
             maxXp *= 1.1f;
         }
+        powerSave.value = power;
+        speedSave.value = speed;
+        healthSave.value = health;
+        levelSave.value = level;
+        maxXpSave.value = maxXp;
+        statPointsSave.value = statPoints;
+        pointsInFireRateSave.value = pointsInFireRate;
+        fireRateSave.value = fireRate;
+        overFlowXpSave.value = overflowXp       ;
+
         xpBar.value = currentXp;
         xpBar.maxValue = maxXp;
         levelText.text = "LV: " + level.ToString();
