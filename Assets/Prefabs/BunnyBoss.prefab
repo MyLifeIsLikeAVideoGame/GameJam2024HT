@@ -358,8 +358,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 500
   xpDrop: 0
-  lootTable: []
-  dropChance: 
+  lootTable:
+  - {fileID: 1564387325123747279, guid: aa14c676cb9d0334b874b3acd9ca9e11, type: 3}
+  - {fileID: 1564387325123747279, guid: b0dbc43b51cf4c6479a9fcf657fb4952, type: 3}
+  - {fileID: 5961861358919360389, guid: e101045f09a663c4ba7a3347e9434b05, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  - {fileID: 5501970486550469886, guid: 91f610bbf046fdf429c7365cec713861, type: 3}
+  dropChance: 65000000650000006500000065000000650000006500000065000000
   flashMaterial: {fileID: 2100000, guid: 82aaf5ea6c69e0247bbc08c7db2f947f, type: 2}
   normalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   bossHealthBar: {fileID: 996135616657815584}

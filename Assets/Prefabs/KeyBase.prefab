@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1564387325123747268}
   - component: {fileID: 8708567099987443723}
   - component: {fileID: 1656176527564362060}
+  - component: {fileID: 1403838588518083094}
   m_Layer: 0
   m_Name: KeyBase
   m_TagString: Untagged
@@ -103,7 +104,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.66, y: 7.89}
+    oldSize: {x: 1.064, y: 3.156}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -233,6 +234,7 @@ MonoBehaviour:
   rig: {fileID: 0}
   player: {fileID: 0}
   magnetize: 0
+  magneticObject: 1
 --- !u!50 &1656176527564362060
 Rigidbody2D:
   serializedVersion: 4
@@ -254,3 +256,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1403838588518083094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564387325123747279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0cbafb2432150f4aa79526790e472e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasMe: {fileID: 0}

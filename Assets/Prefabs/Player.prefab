@@ -1498,6 +1498,7 @@ GameObject:
   - component: {fileID: 6727651100106747289}
   - component: {fileID: 6727651099284525685}
   - component: {fileID: 2035583390}
+  - component: {fileID: 8459638658317496380}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1705,6 +1706,26 @@ MonoBehaviour:
   pointDisplay: {fileID: 776086866}
   keysSave: {fileID: 11400000, guid: bc11f9d2811959f49baf5a76e5219174, type: 2}
   pointsSave: {fileID: 11400000, guid: 7179d860addb9634ab8e890d94321d15, type: 2}
+--- !u!114 &8459638658317496380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6727651100106747287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a246a3f20e7409749b67f3f085460041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasKey1: 0
+  hasKey2: 0
+  hasKey3: 0
+  hasKey4: 0
+  key1: {fileID: 0}
+  key2: {fileID: 0}
+  key3: {fileID: 0}
+  key4: {fileID: 0}
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0
