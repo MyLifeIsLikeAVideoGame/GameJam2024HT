@@ -1747,7 +1747,7 @@ GameObject:
   - component: {fileID: 1212966827924416868}
   - component: {fileID: 3495567183188196904}
   - component: {fileID: 3348514164958513405}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LeftTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1819,7 +1819,7 @@ GameObject:
   - component: {fileID: 1642038720338646647}
   - component: {fileID: 6347045632529113471}
   - component: {fileID: 8457993330897217214}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: DownTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
