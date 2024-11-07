@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5194186003096238671}
   - component: {fileID: 6190624767556692292}
   - component: {fileID: -900842479539254475}
+  - component: {fileID: 4527249523291243171}
   m_Layer: 0
   m_Name: Slam
   m_TagString: Untagged
@@ -120,10 +121,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waitTime: 1
   vel: {x: 0, y: 0}
-  squareSize: {x: 8.8, y: 1.8}
-  whatIsSolid:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!114 &-900842479539254475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,3 +134,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 10
+--- !u!61 &4527249523291243171
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2629664655452523333}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06486964, y: -0.17301154}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 8, y: 4.63}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 7.221561, y: 3.2461572}
+  m_EdgeRadius: 0

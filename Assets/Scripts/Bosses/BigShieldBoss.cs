@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.UI;
 
 public class BigShieldBoss : Entity
 {
+    public Slider bossHealthBar;
     [Header("References")]
     public Transform[] WeaponSpawnPoints;
     public Transform[] enemySpawnPoints, slamSpawnPoints;
@@ -21,11 +23,13 @@ public class BigShieldBoss : Entity
     void Start()
     {
         NewAttack();
+        bossHealthBar.maxValue = health;
     }
 
     // Update is called once per frame
     void Update()
     {
+        bossHealthBar.value = health;
         if (spawning)
         {
             if (startSpawnDuration >  0)
