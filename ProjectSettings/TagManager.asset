@@ -10,6 +10,7 @@ TagManager:
   - DialogueManager
   - Key
   - SceneTransitioner
+  - ShopManager
   layers:
   - Default
   - TransparentFX
