@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: f38407eb05b2fda4c813c0f78dee7c63
   - enabled: 1
-    path: Assets/Scenes/Keshav.unity
+    path: Assets/Scenes/Level1.unity
     guid: cb0d7d1f3ae16cb4fa1922d5cd1d48de
   - enabled: 1
     path: Assets/Scenes/BossTest.unity

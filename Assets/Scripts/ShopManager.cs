@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class ShopManager : MonoBehaviour
 {
     public GameObject player;
-    public string sceneName;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +36,7 @@ public class ShopManager : MonoBehaviour
     public void NextScene()
     {
         gameObject.SetActive(false);
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
     }
 }
