@@ -78,6 +78,7 @@ public class MenuScript : MonoBehaviour
 
     public void ToMenu()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(0);
     }
 
@@ -121,6 +122,7 @@ public class MenuScript : MonoBehaviour
 
     void DeathMenu()
     {
+        Time.timeScale = 0;
         deathMenu.SetActive(true);
     }
 
