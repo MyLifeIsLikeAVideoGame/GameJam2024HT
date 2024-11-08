@@ -20,8 +20,11 @@ public class MenuScript : MonoBehaviour
 
     public float volume;
     public GameObject deathMenu;
-    public PlayerStats playerStats;   
+    public PlayerStats playerStats;
 
+    public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
+    public FloatValue fireRateSave, maxXpSave, overFlowXpSave, xpSave;
+    public BoolValue key1, key2, key3, key4;
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
@@ -30,7 +33,7 @@ public class MenuScript : MonoBehaviour
         pauseMenu.SetActive(false);
         deathMenu.SetActive(false);
         
-
+        
 
     }
 
@@ -47,6 +50,20 @@ public class MenuScript : MonoBehaviour
 
     public void StartGame()
     {
+        powerSave.value = 0;
+        speedSave.value = 0;
+        healthSave.value = 5;
+        levelSave.value = 1;
+        statPointsSave.value = 0;
+        pointsInFireRateSave.value = 0;
+        fireRateSave.value = 0.6f;
+        maxXpSave.value = 100;
+        overFlowXpSave.value = 0;
+        xpSave.value = 0;
+        key1.value = false;
+        key2.value = false;
+        key3.value = false;
+        key4.value = false;
         SceneManager.LoadScene(1);
     }
 
