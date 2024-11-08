@@ -1,0 +1,300 @@
+fileFormatVersion: 2
+guid: 425b230629bf1014795d458311cf8c83
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7169985946964328309
+    second: BigShieldBossAnimation2_0
+  - first:
+      213: -8989850929142822412
+    second: BigShieldBossAnimation2_1
+  - first:
+      213: 3220125958198154016
+    second: BigShieldBossAnimation2_2
+  - first:
+      213: 2714021945118063089
+    second: BigShieldBossAnimation2_3
+  - first:
+      213: 1518888458944860055
+    second: BigShieldBossAnimation2_4
+  - first:
+      213: -4050922913391672550
+    second: BigShieldBossAnimation2_5
+  - first:
+      213: -8660615057269711007
+    second: BigShieldBossAnimation2_6
+  - first:
+      213: -7718877245272623452
+    second: BigShieldBossAnimation2_7
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 350
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.54157346, y: 0.46765026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8006aaf4c71f7c90800000000000000
+      internalID: -7169985946964328309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_1
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.54619277, y: 0.46225858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f90ab0d532ad3380800000000000000
+      internalID: -8989850929142822412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_2
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.54619265, y: 0.45147532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0235a6e7f7f20bc20800000000000000
+      internalID: 3220125958198154016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_3
+      rect:
+        serializedVersion: 2
+        x: 2976
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.550812, y: 0.45686695}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9706f54942aa520800000000000000
+      internalID: 2714021945118063089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_4
+      rect:
+        serializedVersion: 2
+        x: 3968
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.5461929, y: 0.4460837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f49d8810d241510800000000000000
+      internalID: 1518888458944860055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_5
+      rect:
+        serializedVersion: 2
+        x: 4960
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.5461929, y: 0.45147532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a138ccea21b38c7c0800000000000000
+      internalID: -4050922913391672550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_6
+      rect:
+        serializedVersion: 2
+        x: 5952
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.5486837, y: 0.4567059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f1a07cd705fc780800000000000000
+      internalID: -8660615057269711007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BigShieldBossAnimation2_7
+      rect:
+        serializedVersion: 2
+        x: 6944
+        y: 0
+        width: 992.125
+        height: 850
+      alignment: 9
+      pivot: {x: 0.5510022, y: 0.46211767}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6fda2ba0a01e490800000000000000
+      internalID: -7718877245272623452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
