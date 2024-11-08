@@ -247,7 +247,7 @@ public class LevelGeneration : MonoBehaviour
         }
         else
         {
-            boss.transform.position = roomL[roomL.Count].transform.position;
+            boss.transform.position = roomL[roomL.Count - 2].transform.position;
 
 
         }
