@@ -12,6 +12,7 @@ public class Entity : MonoBehaviour
     public Material flashMaterial, normalMaterial;
     public AudioSource deathSound;
     public GameObject deathAudio;
+    public AudioSource damageSound;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class Entity : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
+        damageSound.Play();
         StartCoroutine("flash");
         health -= damage;
         if (health <= 0)
