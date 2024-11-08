@@ -23,6 +23,7 @@ public class PlayerStats : Entity
 
     public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
     public FloatValue fireRateSave, maxXpSave, overFlowXpSave, xpSave;
+    public CameraShake cam;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,8 @@ public class PlayerStats : Entity
 
     public override void TakeDamage(int damage)
     {
+
+        cam.TriggerShake(.2f, .3f);    
         base.TakeDamage(damage);
 
     }
