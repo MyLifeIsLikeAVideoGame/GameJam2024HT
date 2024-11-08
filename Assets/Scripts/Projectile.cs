@@ -17,22 +17,28 @@ public class Projectile : MonoBehaviour
     void Update()
     {
 
-        RaycastHit2D touchingSolid = Physics2D.Raycast(transform.position, Vector2.up, size, whatIsSolid);     
-        if (touchingSolid.collider != null)
+        Collider2D[] touchingSolid = Physics2D.OverlapCircleAll(transform.position, size, whatIsSolid);
+        foreach (Collider2D t in touchingSolid)
         {
-            if (touchingSolid.collider.GetComponent<Entity>() != null)
+            if (t != null)
             {
-                touchingSolid.collider.GetComponent<Entity>().TakeDamage(damage);
+                if (t.GetComponent<Entity>() != null)
+                {
+                    t.GetComponent<Entity>().TakeDamage(damage);
+                }
+                Destroy(gameObject);
             }
-            Destroy(gameObject);
+            
         }
+           
+        
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         
-            Gizmos.DrawWireCube(transform.position, Vector3.up * size);
+            Gizmos.DrawWireSphere(transform.position,  size);
         
     }
 }
