@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 6598048449976928551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c56d9ade279c669469d5df4b658c173b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointsInPowerText: {fileID: 0}
+  pointsInSpeedText: {fileID: 0}
+  pointsInFirerateText: {fileID: 0}
+  statPointsText: {fileID: 0}
   pauseMenu: {fileID: 0}
+  optionsMenu: {fileID: 0}
   volume: 0
   deathMenu: {fileID: 0}
-  player: {fileID: 0}
+  playerStats: {fileID: 0}
+  powerSave: {fileID: 11400000, guid: c70e0abdef4e03f4aae814df5d069e50, type: 2}
+  speedSave: {fileID: 11400000, guid: 81463edb79b0d9946a690ac1f1a5c1e8, type: 2}
+  healthSave: {fileID: 11400000, guid: 9973379b65584fb4c88aad6c3cb91160, type: 2}
+  levelSave: {fileID: 11400000, guid: 477cd3ff347dce14784c6b5c12ad15c1, type: 2}
+  statPointsSave: {fileID: 11400000, guid: 998ccaeb6cdd28642b2d7857e71a8591, type: 2}
+  pointsInFireRateSave: {fileID: 11400000, guid: 9e3e1ae7697dbdc4587748c6da8a11b6, type: 2}
+  fireRateSave: {fileID: 11400000, guid: 2e257b4beffe22d489a4b2af536f591f, type: 2}
+  maxXpSave: {fileID: 11400000, guid: f6524caaf7d777844a661bea64daa03e, type: 2}
+  overFlowXpSave: {fileID: 11400000, guid: a3c7bade8f6e8034f80c09b5b58a3377, type: 2}
+  xpSave: {fileID: 11400000, guid: c730a8106534ac34a914da197e2e151a, type: 2}
+  key1: {fileID: 11400000, guid: 4e46da38242be2048823e114fb2fc7fc, type: 2}
+  key2: {fileID: 11400000, guid: 7f1d63a976d0d344aa54fb6a287cb28f, type: 2}
+  key3: {fileID: 11400000, guid: 5e11ac59ccb8f074c808a6d9f6b2dcf1, type: 2}
+  key4: {fileID: 11400000, guid: 784171a57cfeea54c91b0423a5d3af6b, type: 2}
+  bulletsSave: {fileID: 11400000, guid: 4026c8a67d0e86b4eab7fec8f7931006, type: 2}
+  spreadSave: {fileID: 11400000, guid: 8ecc872b2e29890448763f4f22e486c6, type: 2}
