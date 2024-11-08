@@ -28,6 +28,7 @@ public class MenuScript : MonoBehaviour
 
         optionsMenu.SetActive(false);
         pauseMenu.SetActive(false);
+        deathMenu.SetActive(false);
         
 
 
@@ -38,9 +39,15 @@ public class MenuScript : MonoBehaviour
         
     }
 
-    public void NextScene()
+    public void Back()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        optionsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
     }
 
     public void ExitGame()
