@@ -369,6 +369,8 @@ MonoBehaviour:
   dropChance: 65000000650000006500000065000000650000006500000065000000
   flashMaterial: {fileID: 2100000, guid: 82aaf5ea6c69e0247bbc08c7db2f947f, type: 2}
   normalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  deathAudio: {fileID: 337383214476771952, guid: 1f45302751e09814b98a0a8b949f3da3, type: 3}
+  hurtAudio: {fileID: 5726281811453326470, guid: 5f122fd3748bbfe42af0413f95b51939, type: 3}
   bossHealthBar: {fileID: 996135616657815584}
   knifing: 0
   shootingSide: 0

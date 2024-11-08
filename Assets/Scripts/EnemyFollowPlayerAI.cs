@@ -9,13 +9,11 @@ public class EnemyFollowPlayerAI : MonoBehaviour
     bool playerDetected;
     bool kb, move = true;
     Animator anim;
-    public AudioSource enemySound;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
-        enemySound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,7 +30,6 @@ public class EnemyFollowPlayerAI : MonoBehaviour
         }
         if (playerDetected && !kb && move)
         {
-            enemySound.Play();
             anim.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 

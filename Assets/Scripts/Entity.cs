@@ -10,9 +10,7 @@ public class Entity : MonoBehaviour
     public int[] dropChance;
 
     public Material flashMaterial, normalMaterial;
-    public AudioSource deathSound;
-    public GameObject deathAudio;
-    public AudioSource damageSound;
+    public GameObject deathAudio, hurtAudio;
 
     private void Start()
     {
@@ -21,7 +19,7 @@ public class Entity : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
-        damageSound.Play();
+        Instantiate(hurtAudio);
         StartCoroutine("flash");
         health -= damage;
         if (health <= 0)
@@ -33,7 +31,6 @@ public class Entity : MonoBehaviour
     public virtual void Die()
     {
         Instantiate(deathAudio);
-        deathSound.Play();
         DropLoot(lootTable);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>().currentXp += xpDrop;
         Destroy(gameObject);

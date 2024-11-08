@@ -13,8 +13,7 @@ public class Gun : MonoBehaviour
     public IntValue bulletsSave;
     public FloatValue spreadSave;
     public bool canShoot;
-    public AudioSource shootingSound;
-
+    public GameObject shootSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,10 +46,10 @@ public class Gun : MonoBehaviour
 
     void Shoot()
     {
+        Instantiate(shootSound);
         float dmgMultiplier = 1 + (stats.power/5);
         for (int i = 0; i < numberOfbullets; i++)
         {
-            shootingSound.Play();
             GameObject a = Instantiate(bulletPrefab, shootPosition.position, shootPosition.rotation);
            float total =  a.GetComponent<Projectile>().damage * dmgMultiplier;
             a.GetComponent<Projectile>().damage = Mathf.RoundToInt(total);

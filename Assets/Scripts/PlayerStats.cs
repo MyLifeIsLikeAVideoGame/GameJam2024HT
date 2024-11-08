@@ -24,7 +24,6 @@ public class PlayerStats : Entity
     public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
     public FloatValue fireRateSave, maxXpSave, overFlowXpSave, xpSave;
 
-    public AudioSource playerDamageSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +45,6 @@ public class PlayerStats : Entity
     public override void TakeDamage(int damage)
     {
         base.TakeDamage(damage);
-        playerDamageSound.Play();
 
     }
 
