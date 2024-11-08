@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 14
   runAwayRange: 10
-  moveSpeed: 3
+  moveSpeed: 2
   player: {fileID: 0}
   shootCooldown: 1.7
   shotPoint: {fileID: 3774886540033660813}

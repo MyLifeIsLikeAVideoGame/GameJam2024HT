@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 12
-  moveSpeed: 3
+  moveSpeed: 2
   player: {fileID: 0}
 --- !u!95 &743501796
 Animator:
