@@ -1501,6 +1501,7 @@ GameObject:
   - component: {fileID: 6727651099284525685}
   - component: {fileID: 2035583390}
   - component: {fileID: 8459638658317496380}
+  - component: {fileID: 1449400316851791410}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1680,6 +1681,7 @@ MonoBehaviour:
   maxXpSave: {fileID: 11400000, guid: f6524caaf7d777844a661bea64daa03e, type: 2}
   overFlowXpSave: {fileID: 11400000, guid: a3c7bade8f6e8034f80c09b5b58a3377, type: 2}
   xpSave: {fileID: 11400000, guid: c730a8106534ac34a914da197e2e151a, type: 2}
+  cam: {fileID: 1449400316851791410}
 --- !u!95 &6727651099284525685
 Animator:
   serializedVersion: 3
@@ -1736,6 +1738,21 @@ MonoBehaviour:
   key2: {fileID: 11400000, guid: 7f1d63a976d0d344aa54fb6a287cb28f, type: 2}
   key3: {fileID: 11400000, guid: 5e11ac59ccb8f074c808a6d9f6b2dcf1, type: 2}
   key4: {fileID: 11400000, guid: 784171a57cfeea54c91b0423a5d3af6b, type: 2}
+--- !u!114 &1449400316851791410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6727651100106747287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97168c83d67e50149921e77853823fc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake: 0
+  shakeAmount: 0.2
+  decreaseFactor: 1
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0
