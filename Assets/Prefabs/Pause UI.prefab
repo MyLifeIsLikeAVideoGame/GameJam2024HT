@@ -275,7 +275,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6898837876257166486, guid: 46a679c052953b34b85f3bbfbc3bac7e, type: 3}
+  m_Sprite: {fileID: 4244996641901405781, guid: 1a9e3a8e819d1a048b1c09083c507d35, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1742,7 +1742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &5023302364685213329
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2208,11 +2208,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180556360931187683, guid: 962cd173424f55344876ef292e221ad5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6797282784795368248, guid: 962cd173424f55344876ef292e221ad5, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6985545633680209999, guid: 962cd173424f55344876ef292e221ad5, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
