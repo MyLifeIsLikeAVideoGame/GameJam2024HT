@@ -25,6 +25,8 @@ public class MenuScript : MonoBehaviour
     public IntValue powerSave, speedSave, healthSave, levelSave, statPointsSave, pointsInFireRateSave;
     public FloatValue fireRateSave, maxXpSave, overFlowXpSave, xpSave;
     public BoolValue key1, key2, key3, key4;
+    public IntValue bulletsSave;
+    public FloatValue spreadSave;
     private void Start()
     {
         playerStats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
@@ -64,6 +66,8 @@ public class MenuScript : MonoBehaviour
         key2.value = false;
         key3.value = false;
         key4.value = false;
+        bulletsSave.value = 1;
+        spreadSave.value = 0.1f;
         SceneManager.LoadScene(1);
     }
 
