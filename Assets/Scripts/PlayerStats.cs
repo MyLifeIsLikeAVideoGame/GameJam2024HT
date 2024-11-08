@@ -93,7 +93,7 @@ public class PlayerStats : Entity
         xpBar.value = currentXp;
         xpBar.maxValue = maxXp;
         health = Mathf.Clamp(health, 0, maxHealth);
-        levelText.text = "LV: " + level.ToString();
+        levelText.text = level.ToString();
 
     }
 

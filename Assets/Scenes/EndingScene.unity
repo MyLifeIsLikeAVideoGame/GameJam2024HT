@@ -156,18 +156,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.97635376}
+  m_Offset: {x: 0.047026873, y: 3.022026}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5015819, y: 0.0996074}
+    oldSize: {x: 7.5000005, y: 7.5000005}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6316814, y: 4.1097193}
+  m_Size: {x: 7.6414056, y: 8.859442}
   m_EdgeRadius: 0
 --- !u!61 &394302910
 BoxCollider2D:
@@ -182,18 +182,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.023513317, y: 1.975132}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5015819, y: 0.0996074}
+    oldSize: {x: 7.5000005, y: 7.5000005}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 4.5270205, y: 4.950264}
   m_EdgeRadius: 0
 --- !u!212 &394302911
 SpriteRenderer:
@@ -235,8 +235,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: ceb0994dfadbcef41a545fa80b741016, type: 3}
+  m_Color: {r: 0.732, g: 0.732, b: 0.732, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1901,8 +1901,10 @@ MonoBehaviour:
 
     Animations - Alva
 
-    UI
-    art  - Alva
+    Environment
+    art - Stefanos
+
+    UI art  - Alva
 
     Boss art and animation - Eveline
 
@@ -1910,7 +1912,8 @@ MonoBehaviour:
 
 
 
-    Thanks for playing!'
+    Thanks
+    for playing!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
