@@ -14,6 +14,7 @@ public class Gun : MonoBehaviour
     public FloatValue spreadSave;
     public bool canShoot;
     public GameObject shootSound;
+    float tapcooldown, starttapcooldown;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,7 +38,23 @@ public class Gun : MonoBehaviour
             {
                 shootstartcooldown -= Time.deltaTime;
             }
-            
+
+        }
+
+        if (shootstartcooldown <= 0)
+        {
+            if (Input.GetMouseButtonDown(0) && canShoot)
+            {
+                Shoot();
+                shootstartcooldown = stats.fireRate;
+
+            }
+
+        }
+        else
+        {
+            shootstartcooldown -= Time.deltaTime;
+
         }
 
         spreadSave.value = bulletSpread;

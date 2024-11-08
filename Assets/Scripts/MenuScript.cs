@@ -68,6 +68,7 @@ public class MenuScript : MonoBehaviour
         key4.value = false;
         bulletsSave.value = 1;
         spreadSave.value = 0.1f;
+
         SceneManager.LoadScene(1);
     }
 

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5501970486550469877}
   - component: {fileID: 4705442602695306248}
   - component: {fileID: 5780489881741185432}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PointBase
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -233,6 +233,7 @@ MonoBehaviour:
   rig: {fileID: 0}
   player: {fileID: 0}
   magnetize: 0
+  magneticObject: 1
 --- !u!50 &5780489881741185432
 Rigidbody2D:
   serializedVersion: 4
