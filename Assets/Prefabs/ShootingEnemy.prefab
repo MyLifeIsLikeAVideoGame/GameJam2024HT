@@ -163,9 +163,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followRange: 14
   runAwayRange: 10
-  moveSpeed: 3
+  moveSpeed: 2
   player: {fileID: 0}
-  shootCooldown: 1
+  shootCooldown: 1.7
   shotPoint: {fileID: 3774886540033660813}
   bullet: {fileID: 7565468345142953964, guid: 2ceb05bdaf80c7644bd5a8d94c315f1c, type: 3}
   shootSound: {fileID: 6725816111436343843, guid: 091c9ade6c6e28e4f9fbe9ef8bb1fda7, type: 3}
