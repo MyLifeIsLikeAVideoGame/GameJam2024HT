@@ -1826,9 +1826,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 97168c83d67e50149921e77853823fc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shake: 0
-  shakeAmount: 0.2
-  decreaseFactor: 1
+  mainCamera: {fileID: 0}
+  shakeDuration: 0
+  shakeMagnitude: 0.1
+  shakeFrequency: 0.1
 --- !u!1 &6727651100199706788
 GameObject:
   m_ObjectHideFlags: 0
@@ -2120,8 +2121,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4286877605
+  m_fontColor: {r: 0.64705884, g: 0.56078434, b: 0.5176471, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
