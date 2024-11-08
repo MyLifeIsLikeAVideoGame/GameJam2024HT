@@ -288,6 +288,22 @@ MonoBehaviour:
   volume: 0
   deathMenu: {fileID: 0}
   playerStats: {fileID: 0}
+  powerSave: {fileID: 0}
+  speedSave: {fileID: 0}
+  healthSave: {fileID: 0}
+  levelSave: {fileID: 0}
+  statPointsSave: {fileID: 0}
+  pointsInFireRateSave: {fileID: 0}
+  fireRateSave: {fileID: 0}
+  maxXpSave: {fileID: 0}
+  overFlowXpSave: {fileID: 0}
+  xpSave: {fileID: 0}
+  key1: {fileID: 0}
+  key2: {fileID: 0}
+  key3: {fileID: 0}
+  key4: {fileID: 0}
+  bulletsSave: {fileID: 0}
+  spreadSave: {fileID: 0}
 --- !u!4 &222866081
 Transform:
   m_ObjectHideFlags: 0
@@ -490,7 +506,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 222866080}
         m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
-        m_MethodName: NextScene
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
