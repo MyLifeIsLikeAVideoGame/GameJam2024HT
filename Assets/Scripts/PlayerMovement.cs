@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed, slowSpeed;
-    float speed;
+  [HideInInspector]public  float speed;
     Rigidbody2D rb;
     Vector2 moveInput;
     PlayerStats stats;
