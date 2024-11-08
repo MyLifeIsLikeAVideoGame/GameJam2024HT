@@ -13,6 +13,8 @@ public class ShootEnemyAI : MonoBehaviour
     public GameObject bullet;
     float startShootCooldown;
     Animator anim;
+    public AudioSource enemySound;
+    public AudioSource shootingSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +27,7 @@ public class ShootEnemyAI : MonoBehaviour
     {
         if (Vector2.Distance(transform.position, player.position) <= followRange && Vector2.Distance(transform.position, player.position) > runAwayRange)
         {
+            enemySound.Play();
             anim.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
         }
@@ -32,6 +35,7 @@ public class ShootEnemyAI : MonoBehaviour
 
         if (Vector2.Distance(transform.position, player.position) <= runAwayRange)
         {
+            enemySound.Play();
             transform.position = Vector2.MoveTowards(transform.position, player.position, -moveSpeed * Time.deltaTime);
 
             anim.SetBool("moving", true);
@@ -67,6 +71,7 @@ public class ShootEnemyAI : MonoBehaviour
 
     void Shoot()
     {
+        shootingSound.Play();
       GameObject a =  Instantiate(bullet, shotPoint.position, shotPoint.rotation);
         Rigidbody2D arb = a.GetComponent<Rigidbody2D>();
         Vector2 dir = shotPoint.rotation * Vector2.up;
