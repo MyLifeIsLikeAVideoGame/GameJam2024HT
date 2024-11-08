@@ -688,7 +688,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6727651098441745798}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9425fc78456180647bf37b6d00c9a5e5, type: 3}
   m_Name: 
@@ -1042,6 +1042,7 @@ MonoBehaviour:
   shootPosition: {fileID: 6727651100199706795}
   bulletsSave: {fileID: 11400000, guid: 4026c8a67d0e86b4eab7fec8f7931006, type: 2}
   spreadSave: {fileID: 11400000, guid: 8ecc872b2e29890448763f4f22e486c6, type: 2}
+  canShoot: 0
 --- !u!1 &6727651099053205287
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1626,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5.5
+  slowSpeed: 4.5
+  gunEquipButton: 102
+  gun: {fileID: 6727651098963574619}
 --- !u!114 &6727651100106747289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1646,7 +1650,7 @@ MonoBehaviour:
   power: 0
   speed: 0
   maxHealth: 5
-  fireRate: 1
+  fireRate: 0.8
   hearts:
   - {fileID: 376621339}
   - {fileID: 1415190581}

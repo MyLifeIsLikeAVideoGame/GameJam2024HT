@@ -8,10 +8,12 @@ public class EnemyFollowPlayerAI : MonoBehaviour
     public Transform player;
     bool playerDetected;
     bool kb, move = true;
+    Animator anim;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -28,8 +30,13 @@ public class EnemyFollowPlayerAI : MonoBehaviour
         }
         if (playerDetected && !kb && move)
         {
+            anim.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(transform.position, player.position, moveSpeed * Time.deltaTime);
 
+        }
+        else
+        {
+            anim.SetBool("moving", false);
         }
 
         if (kb && !move)

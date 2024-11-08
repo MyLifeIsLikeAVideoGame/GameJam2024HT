@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed;
+    public float moveSpeed, slowSpeed;
+    float speed;
     Rigidbody2D rb;
     Vector2 moveInput;
     PlayerStats stats;
     Animator anim;
+
+    public KeyCode gunEquipButton;
+    bool equipping = false;
+    public Gun gun;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,11 +38,32 @@ public class PlayerMovement : MonoBehaviour
 
             anim.SetBool("isMoving", false);
         }
+        if (equipping)
+        {
+            speed = slowSpeed;
+            gun.canShoot = true;
+        }
+        else
+        {
+            speed = moveSpeed;
+            gun.canShoot = false;
+        }
+
+        if (Input.GetKeyDown(gunEquipButton))
+        {
+            EquipAndUnequip();
+        }
+        anim.SetBool("hasGun", equipping);
     }
 
     private void FixedUpdate()
     {
         float spdMultiplier = 1 + (stats.speed / 10);
-        rb.velocity = moveInput.normalized * moveSpeed * spdMultiplier;
+        rb.velocity = moveInput.normalized * speed * spdMultiplier;
+    }
+
+    void EquipAndUnequip()
+    {
+        equipping = !equipping;
     }
 }
