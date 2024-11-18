@@ -45,8 +45,6 @@ public class PlayerStats : Entity
 
     public override void TakeDamage(int damage)
     {
-
-        cam.TriggerShake(.2f, .3f);    
         base.TakeDamage(damage);
 
     }
