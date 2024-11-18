@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
-  xpDrop: 0
+  xpDrop: 350
   lootTable:
   - {fileID: 1564387325123747279, guid: aa14c676cb9d0334b874b3acd9ca9e11, type: 3}
   - {fileID: 1564387325123747279, guid: b0dbc43b51cf4c6479a9fcf657fb4952, type: 3}
